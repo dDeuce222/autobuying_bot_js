@@ -1,0 +1,24 @@
+{
+  "name": "bybit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "afplay": "^1.0.3",
+    "alert-sound-notify": "0.0.8",
+    "baudio": "^2.1.4",
+    "beeper": "^3.0.0",
+    "bybit-api": "^2.1.10",
+    "mplayer": "^2.1.0",
+    "play": "^0.5.0",
+    "request": "^2.88.2",
+    "sound-play": "^1.1.0",
+    "sox": "^0.1.0",
+    "speaker": "^0.5.4"
+  }
+}

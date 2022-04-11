@@ -1,0 +1,18 @@
+{
+    "mainLoopDelay": 6000,
+    "priceDiffMark_1": 1000,
+    "priceDiffMark_2": 2000,
+    "priceDiffMark_3": 3000,
+    "liqBarsThreshold": 1500,
+    "priceBarsThreshold": 1000,
+    "mainGoalPrice": 65000,
+    "lowPriceGoodToBuy_1": 40800,
+    "headerInterval": 40,
+    "maxOwnContracts": 700,
+    "minDelayBetweenOrders": 15000,
+    "minRunningCyclesToPlaceOrder": 1,
+    "offerOffsetDown": 25,
+    "autoRaiseOffer": true,
+    "autoRaiseOfferIncrement": 0.5,
+    "highChangeThreshold": 25
+}
