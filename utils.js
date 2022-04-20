@@ -1,8 +1,14 @@
 module.exports = {
-    indent: function(text, spaces) {
+    indent: function(text, spaces, indentLeft) {
+
         let ret = text;
         if (text.toString().length > spaces) { return text.toString().substring(0, spaces + 1); }
-        for (let i = spaces; i >= text.toString().length; i--) { ret = ret + ' '; }
+        for (let i = spaces; i >= text.toString().length; i--) {
+
+            if (indentLeft)
+                ret = ' ' + ret
+            else ret = ret + ' '
+        }
         return ret;
     },
     printLiqBars: function(lastPrice, liqPrice, liqBarsThreshold) {
@@ -10,34 +16,42 @@ module.exports = {
         let diff = Number((lastPrice - liqPrice))
         let percentual = (diff * 100) / liqBarsThreshold
 
-        let ip = percentual / 10;
-
-        if (percentual > 16.66)
+        if (percentual > 12.5)
             process.stdout.write("»".brightGreen.bgBlack)
         else
             process.stdout.write("»".red.bgBlack)
 
-        if (percentual > 33.32)
+        if (percentual > 25)
             process.stdout.write("»".brightGreen.bgBlack)
         else
             process.stdout.write("»".red.bgBlack)
 
-        if (percentual > 49.98)
+        if (percentual > 37.5)
             process.stdout.write("»".brightGreen.bgBlack)
         else
             process.stdout.write("»".red.bgBlack)
 
-        if (percentual > 66.64)
+        if (percentual > 50)
             process.stdout.write("»".brightGreen.bgBlack)
         else
             process.stdout.write("»".red.bgBlack)
 
-        if (percentual > 83.30)
+        if (percentual > 62.5)
             process.stdout.write("»".brightGreen.bgBlack)
         else
             process.stdout.write("»".red.bgBlack)
 
-        if (percentual > 99.90)
+        if (percentual > 75)
+            process.stdout.write("»".brightGreen.bgBlack)
+        else
+            process.stdout.write("»".red.bgBlack)
+
+        if (percentual > 87.5)
+            process.stdout.write("»".brightGreen.bgBlack)
+        else
+            process.stdout.write("»".red.bgBlack)
+
+        if (percentual > 100)
             process.stdout.write("»".brightGreen.bgBlack)
         else
             process.stdout.write("»".red.bgBlack)
@@ -50,12 +64,6 @@ module.exports = {
         let diff = Number((lastPrice - min24h))
         let percentual = (diff * 100) / currPriceBarsThreshold
 
-        //console.log('currPriceBarsThreshold : ' + currPriceBarsThreshold)
-        //console.log('max24h     : ' + max24h)
-        //console.log('min24h     : ' + min24h)
-        //console.log('diff       : ' + diff)
-        //console.log('percentual : ' + percentual)
-
         let ip = percentual / 10;
 
         for (let i = 0; i < ip; i++) {
@@ -67,50 +75,88 @@ module.exports = {
         }
 
     },
-    printPriceRangeBars: function(entry, lastPrice, priceBarsThreshold) {
+    printPriceRangeBars: function(entry, lastPrice, range, priceDistThreshold, isLongActive) {
 
         let diff = Math.abs(Number((lastPrice - entry)))
-        let percentual = (diff * 100) / priceBarsThreshold
+        let percentual = 0;
 
-        //console.log('currPriceBarsThreshold : ' + currPriceBarsThreshold)
-        //console.log('max24h     : ' + max24h)
-        //console.log('min24h     : ' + min24h)
-        //console.log()
-        //console.log('diff       : ' + diff)
-        //console.log('percentual : ' + percentual)
+        if (Number((lastPrice - entry)) < 0) {
+            //console.log('cinza ' + Number((lastPrice - entry)))
+            percentual = (diff / priceDistThreshold) * 100
 
-        let ip = percentual / 10;
-        //console.log('percentual :' + percentual)
+            if (percentual < 90)
+                process.stdout.write("»".cyan.bgBlack)
+            else
+                process.stdout.write("»".brightRed.bgBlack)
 
-        if (percentual > 100.00)
-            process.stdout.write("»".red.bgBlack)
-        else
-            process.stdout.write("»".brightGreen.bgBlack)
+            if (percentual < 65)
+                process.stdout.write("»".cyan.bgBlack)
+            else
+                process.stdout.write("»".brightRed.bgBlack)
 
-        if (percentual > 80)
-            process.stdout.write("»".red.bgBlack)
-        else
-            process.stdout.write("»".brightGreen.bgBlack)
+            if (percentual < 50)
+                process.stdout.write("»".cyan.bgBlack)
+            else
+                process.stdout.write("»".brightRed.bgBlack)
 
-        if (percentual > 60)
-            process.stdout.write("»".red.bgBlack)
-        else
-            process.stdout.write("»".brightGreen.bgBlack)
+            if (percentual < 20)
+                process.stdout.write("»".cyan.bgBlack)
+            else
+                process.stdout.write("»".brightRed.bgBlack)
 
-        if (percentual > 40)
-            process.stdout.write("»".red.bgBlack)
-        else
-            process.stdout.write("»".brightGreen.bgBlack)
+            if (percentual < 5)
+                process.stdout.write("»".cyan.bgBlack)
+            else
+                process.stdout.write("»".brightRed.bgBlack)
 
-        if (percentual > 20)
-            process.stdout.write("»".red.bgBlack)
-        else
-            process.stdout.write("»".brightGreen.bgBlack)
+            process.stdout.write("»".brightRed.bgBlack)
 
-        if (percentual > 0)
-            process.stdout.write("»".red.bgBlack)
-        else
-            process.stdout.write("»".brightGreen.bgBlack)
+
+        } else {
+
+            //console.log('normal ' + Number((lastPrice - entry)))
+
+            if (diff > range && !isLongActive) {
+                process.stdout.write(" LONG ".yellow.bgRed)
+            } else if (diff > range) {
+                process.stdout.write(" SELL ".yellow.bgBlue)
+
+            } else {
+                percentual = (diff / range) * 100
+                    //console.log('percentual ' + percentual)
+
+
+                if (percentual > 0)
+                    process.stdout.write("»".brightYellow.bgBlack)
+                else
+                    process.stdout.write("»".cyan.bgBlack)
+
+                if (percentual > 20)
+                    process.stdout.write("»".brightYellow.bgBlack)
+                else
+                    process.stdout.write("»".cyan.bgBlack)
+
+                if (percentual > 50)
+                    process.stdout.write("»".brightYellow.bgBlack)
+                else
+                    process.stdout.write("»".cyan.bgBlack)
+
+                if (percentual > 65)
+                    process.stdout.write("»".brightYellow.bgBlack)
+                else
+                    process.stdout.write("»".cyan.bgBlack)
+
+                if (percentual > 90)
+                    process.stdout.write("»".brightYellow.bgBlack)
+                else
+                    process.stdout.write("»".cyan.bgBlack)
+
+                process.stdout.write("»".cyan.bgBlack)
+
+            }
+
+        }
+
     }
 
 };
