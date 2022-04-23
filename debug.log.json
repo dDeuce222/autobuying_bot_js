@@ -27370,3 +27370,477 @@
   "rate_limit_reset_ms": 1650750813175,
   "rate_limit": 100
 }}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Buy",
+      "order_type": "Limit",
+      "price": "39797.5",
+      "qty": 1,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 1103153061
+      },
+      "last_exec_time": "1650750970.100631",
+      "leaves_qty": 1,
+      "leaves_value": "0.00002512",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-04-23T21:56:10.100458661Z",
+      "updated_at": "2022-04-23T21:56:10.108544139Z",
+      "order_id": "6418000f-38c1-4c8d-a28d-641ed0488f8a",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1650751100.417785",
+  "rate_limit_status": 585,
+  "rate_limit_reset_ms": 1650751100415,
+  "rate_limit": 600
+}}] 
+[closeOrderByID] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "6418000f-38c1-4c8d-a28d-641ed0488f8a",
+    "symbol": "BTCUSD",
+    "side": "Buy",
+    "order_type": "Limit",
+    "price": 39797.5,
+    "qty": 1,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "New",
+    "last_exec_time": 1650750970.100631,
+    "last_exec_price": 0,
+    "leaves_qty": 1,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-04-23T21:56:10.1Z",
+    "updated_at": "2022-04-23T21:58:20.822Z",
+    "take_profit": "",
+    "stop_loss": "",
+    "tp_trigger_by": "",
+    "sl_trigger_by": ""
+  },
+  "time_now": "1650751100.822978",
+  "rate_limit_status": 99,
+  "rate_limit_reset_ms": 1650751100819,
+  "rate_limit": 100
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Buy",
+      "order_type": "Limit",
+      "price": "39848.5",
+      "qty": 1,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 1103364298
+      },
+      "last_exec_time": "1650751112.560333",
+      "leaves_qty": 1,
+      "leaves_value": "0.00002509",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-04-23T21:58:32.560224189Z",
+      "updated_at": "2022-04-23T21:58:32.56832065Z",
+      "order_id": "375a14e0-a620-4688-835d-566859c654d6",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1650751120.039019",
+  "rate_limit_status": 598,
+  "rate_limit_reset_ms": 1650751120036,
+  "rate_limit": 600
+}}] 
+[closeOrderByID] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "375a14e0-a620-4688-835d-566859c654d6",
+    "symbol": "BTCUSD",
+    "side": "Buy",
+    "order_type": "Limit",
+    "price": 39848.5,
+    "qty": 1,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "New",
+    "last_exec_time": 1650751112.560333,
+    "last_exec_price": 0,
+    "leaves_qty": 1,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-04-23T21:58:32.56Z",
+    "updated_at": "2022-04-23T21:58:40.444Z",
+    "take_profit": "",
+    "stop_loss": "",
+    "tp_trigger_by": "",
+    "sl_trigger_by": ""
+  },
+  "time_now": "1650751120.445009",
+  "rate_limit_status": 97,
+  "rate_limit_reset_ms": 1650751120442,
+  "rate_limit": 100
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Buy",
+      "order_type": "Limit",
+      "price": "39848",
+      "qty": 1,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 1103389134
+      },
+      "last_exec_time": "1650751132.164258",
+      "leaves_qty": 1,
+      "leaves_value": "0.00002509",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-04-23T21:58:52.164150521Z",
+      "updated_at": "2022-04-23T21:58:52.171210281Z",
+      "order_id": "2fa2da89-1e28-4d9b-974d-dfe2896b993f",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1650751146.942005",
+  "rate_limit_status": 594,
+  "rate_limit_reset_ms": 1650751146939,
+  "rate_limit": 600
+}}] 
+[closeOrderByID] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "2fa2da89-1e28-4d9b-974d-dfe2896b993f",
+    "symbol": "BTCUSD",
+    "side": "Buy",
+    "order_type": "Limit",
+    "price": 39848,
+    "qty": 1,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "New",
+    "last_exec_time": 1650751132.164258,
+    "last_exec_price": 0,
+    "leaves_qty": 1,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-04-23T21:58:52.164Z",
+    "updated_at": "2022-04-23T21:59:07.355Z",
+    "take_profit": "",
+    "stop_loss": "",
+    "tp_trigger_by": "",
+    "sl_trigger_by": ""
+  },
+  "time_now": "1650751147.356100",
+  "rate_limit_status": 95,
+  "rate_limit_reset_ms": 1650751147354,
+  "rate_limit": 100
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Buy",
+      "order_type": "Limit",
+      "price": "39862.5",
+      "qty": 1,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 1103426634
+      },
+      "last_exec_time": "1650751159.250008",
+      "leaves_qty": 1,
+      "leaves_value": "0.00002508",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-04-23T21:59:19.249929512Z",
+      "updated_at": "2022-04-23T21:59:19.25699065Z",
+      "order_id": "53892959-93b3-4d3b-b0d0-4fb0fe940ab7",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1650751202.297063",
+  "rate_limit_status": 592,
+  "rate_limit_reset_ms": 1650751202295,
+  "rate_limit": 600
+}}] 
+[closeOrderByID] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "53892959-93b3-4d3b-b0d0-4fb0fe940ab7",
+    "symbol": "BTCUSD",
+    "side": "Buy",
+    "order_type": "Limit",
+    "price": 39862.5,
+    "qty": 1,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "New",
+    "last_exec_time": 1650751159.250008,
+    "last_exec_price": 0,
+    "leaves_qty": 1,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-04-23T21:59:19.249Z",
+    "updated_at": "2022-04-23T22:00:02.696Z",
+    "take_profit": "",
+    "stop_loss": "",
+    "tp_trigger_by": "",
+    "sl_trigger_by": ""
+  },
+  "time_now": "1650751202.697263",
+  "rate_limit_status": 99,
+  "rate_limit_reset_ms": 1650751202694,
+  "rate_limit": 100
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Buy",
+      "order_type": "Limit",
+      "price": "39869",
+      "qty": 1,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 1103502707
+      },
+      "last_exec_time": "1650751214.603433",
+      "leaves_qty": 1,
+      "leaves_value": "0.00002508",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-04-23T22:00:14.603374423Z",
+      "updated_at": "2022-04-23T22:00:14.610642155Z",
+      "order_id": "7a0d56f6-5f23-4474-9b46-b5ccf935a0d9",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1650751247.723658",
+  "rate_limit_status": 596,
+  "rate_limit_reset_ms": 1650751247721,
+  "rate_limit": 600
+}}] 
+[closeOrderByID] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "7a0d56f6-5f23-4474-9b46-b5ccf935a0d9",
+    "symbol": "BTCUSD",
+    "side": "Buy",
+    "order_type": "Limit",
+    "price": 39869,
+    "qty": 1,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "New",
+    "last_exec_time": 1650751214.603433,
+    "last_exec_price": 0,
+    "leaves_qty": 1,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-04-23T22:00:14.603Z",
+    "updated_at": "2022-04-23T22:00:48.123Z",
+    "take_profit": "",
+    "stop_loss": "",
+    "tp_trigger_by": "",
+    "sl_trigger_by": ""
+  },
+  "time_now": "1650751248.123834",
+  "rate_limit_status": 97,
+  "rate_limit_reset_ms": 1650751248121,
+  "rate_limit": 100
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Buy",
+      "order_type": "Limit",
+      "price": "39839.5",
+      "qty": 1,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 1106853254
+      },
+      "last_exec_time": "1650753678.848444",
+      "leaves_qty": 1,
+      "leaves_value": "0.0000251",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-04-23T22:41:18.848376224Z",
+      "updated_at": "2022-04-23T22:41:18.856561869Z",
+      "order_id": "1bdf1cf6-30a4-4592-a072-cc940cadd59d",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1650753726.996634",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1650753726992,
+  "rate_limit": 600
+}}] 
+[closeOrderByID] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "1bdf1cf6-30a4-4592-a072-cc940cadd59d",
+    "symbol": "BTCUSD",
+    "side": "Buy",
+    "order_type": "Limit",
+    "price": 39839.5,
+    "qty": 1,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "New",
+    "last_exec_time": 1650753678.848444,
+    "last_exec_price": 0,
+    "leaves_qty": 1,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-04-23T22:41:18.848Z",
+    "updated_at": "2022-04-23T22:42:07.409Z",
+    "take_profit": "",
+    "stop_loss": "",
+    "tp_trigger_by": "",
+    "sl_trigger_by": ""
+  },
+  "time_now": "1650753727.409879",
+  "rate_limit_status": 99,
+  "rate_limit_reset_ms": 1650753727408,
+  "rate_limit": 100
+}}] 

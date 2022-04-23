@@ -149,7 +149,7 @@ iohook.start(false); */
 ws.on('update', async data => {
     //console.log('data : ' + JSON.stringify(data))
     commandChanged = true
-    console.log(' ' + data.data[0].order_status.toString().brightYellow.bgBlack + '@'.brightCyan.bgBlack +
+    console.log(data.data[0].order_status.toString().brightYellow.bgBlack + '@'.brightCyan.bgBlack +
         data.data[0].price.toString().brightYellow.bgBlack + ' ' +
         new Date().toString().substring(16).replace('GMT-0300 (Brasilia Standard Time)', '').yellow.bgBlack +
         `ep=${Number(entryPrice).toFixed(2)}`.yellow.bgBlack + ` -${(Number(lastEntryPrice) - Number(entryPrice)).toFixed(2)}` + // TODO corrigir :)
@@ -625,9 +625,10 @@ async function mainLoop() {
         process.stdout.write(`@`.yellow.bgBlack)
         utils.printFancyPrice(colors, 'cyan', 'brightYellow', 'brightBlue', Number(entryPrice).toFixed(2))
 
-        process.stdout.write(` C@`.brightGreen.bgBlack)
+        process.stdout.write(` C`.brightYellow.bgBlack)
+        process.stdout.write(`@`.brightGreen.bgBlack)
         utils.printFancyPrice(colors, 'brightGreen', 'brightYellow', 'green', (Number(entryPrice) + Number(considerClosingPositionPriceDistance)).toFixed(2))
-        process.stdout.write(` L@`.brightRed.bgBlack)
+        process.stdout.write(` L@`.red.bgBlack)
         utils.printFancyPrice(colors, 'brightRed', 'yellow', 'red', Number(liqPrice).toFixed(2))
 
         if (Number(lastPrice) > Number(lastLastPrice)) {
@@ -669,7 +670,7 @@ async function mainLoop() {
 
 
         process.stdout.write(' ±'.white.bgBlack)
-        process.stdout.write((currentMaxPrice - currentMinPrice).toFixed(0).toString().brightMagenta.bgBlack)
+        process.stdout.write(utils.indent((currentMaxPrice - currentMinPrice).toFixed(0), 3, true).brightMagenta.bgYellow)
 
         process.stdout.write(' ' + Math.abs(Number(pdistMax).toFixed(0)).toString().cyan.bgBlack)
         process.stdout.write(' '.grey.bgBlack)

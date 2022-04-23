@@ -23,7 +23,7 @@
     "offerOffsetDown": 27,
     "autoOfferOffsetDown": 27,
     "ancientOrderMinutes": 3,
-    "autoMinPriceDistance": 729,
+    "autoMinPriceDistance": 243,
     "autoMinPriceDistance_options": "3, 6, 9, 27, 33, 54, 66, 81, 99, 132, 198, 243, 333, 396, 486, 576, 666, 729, 882, 999, 1332, 2187, 4374, 6666",
     "autoMinPriceDistance_options2": "3, 9, 27, 81, 243, 729, 2187, 6561, 19683",
 
