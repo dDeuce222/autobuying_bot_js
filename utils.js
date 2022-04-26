@@ -18,57 +18,57 @@ module.exports = {
 
         if (isLongActive) {
             if (percentual > 10)
-                process.stdout.write("l".brightGreen.bgBlack)
+                process.stdout.write("l".green.bgBlack)
             else
                 process.stdout.write("l".red.bgBlack)
 
             if (percentual > 20)
-                process.stdout.write("i".brightGreen.bgBlack)
+                process.stdout.write("i".green.bgBlack)
             else
                 process.stdout.write("i".red.bgBlack)
 
             if (percentual > 30)
-                process.stdout.write("q".brightGreen.bgBlack)
+                process.stdout.write("q".green.bgBlack)
             else
                 process.stdout.write("q".red.bgBlack)
 
             if (percentual > 40)
-                process.stdout.write("u".brightGreen.bgBlack)
+                process.stdout.write("u".green.bgBlack)
             else
                 process.stdout.write("u".red.bgBlack)
 
             if (percentual > 50)
-                process.stdout.write("i".brightGreen.bgBlack)
+                process.stdout.write("i".green.bgBlack)
             else
                 process.stdout.write("i".red.bgBlack)
 
             if (percentual > 60)
-                process.stdout.write("d".brightGreen.bgBlack)
+                process.stdout.write("d".green.bgBlack)
             else
                 process.stdout.write("d".red.bgBlack)
 
             if (percentual > 70)
-                process.stdout.write("a".brightGreen.bgBlack)
+                process.stdout.write("a".green.bgBlack)
             else
                 process.stdout.write("a".red.bgBlack)
 
             if (percentual > 80)
-                process.stdout.write("t".brightGreen.bgBlack)
+                process.stdout.write("t".green.bgBlack)
             else
                 process.stdout.write("t".red.bgBlack)
 
             if (percentual > 90)
-                process.stdout.write("i".brightGreen.bgBlack)
+                process.stdout.write("i".green.bgBlack)
             else
                 process.stdout.write("i".red.bgBlack)
 
             if (percentual > 100)
-                process.stdout.write("o".brightGreen.bgBlack)
+                process.stdout.write("o".green.bgBlack)
             else
                 process.stdout.write("o".red.bgBlack)
 
             if (percentual > 110)
-                process.stdout.write("n".brightGreen.bgBlack)
+                process.stdout.write("n".green.bgBlack)
             else
                 process.stdout.write("n".red.bgBlack)
 
