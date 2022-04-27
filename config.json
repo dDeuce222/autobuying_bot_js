@@ -14,24 +14,26 @@
     "headerInterval": 66,
     "liqBarsThreshold": 999,
     "priceDistThreshold": 1500,
-    "minDelayBetweenOrders": 6561,
 
+    "minDelayBetweenOrders": 6561,
     "autoManageOrderPrice": true,
     "lowPriceGoodToBuy1": 35999,
-    "qtdContractsToBuy": 1,
-    "maxOwnContracts": 1333,
-    "offerOffsetDown": 9,
-    "autoOfferOffsetDown": 3,
-    "ancientOrderMinutes": 3,
-    "autoMinPriceDistance": 999,
+
     "autoMinPriceDistance_options": "3, 6, 9, 27, 33, 54, 66, 81, 99, 132, 198, 243, 333, 396, 486, 576, 666, 729, 882, 999, 1332, 2187, 4374, 6666",
     "autoMinPriceDistance_options2": "3, 9, 27, 81, 243, 729, 2187, 6561, 19683",
 
-    "considerClosingPositionPriceDistance": 81,
-    "qtdContractsToClosePosition": 3,
-    "minOwnedContractsToStartClosingPosition": 9,
-    "ancientClosePositionOrderMinutes": 0.9,
+    "maxOwnContracts": 2187,
+    "qtdContractsToBuy": 1,
+    "offerOffsetDown": 9,
+    "autoOfferOffsetDown": 3,
+    "ancientOrderMinutes": 0.3,
+    "autoMinPriceDistance": 243,
 
+    "considerClosingPositionPriceDistance": 81,
+    "qtdContractsToClosePosition": 27,
+    "minOwnedContractsToStartClosingPosition": 9,
+
+    "ancientClosePositionOrderMinutes": 0.3,
     "liquidationDistAlert": 333,
     "liquidationQtdOffer": 9,
 

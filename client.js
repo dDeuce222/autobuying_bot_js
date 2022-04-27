@@ -427,20 +427,25 @@ async function mainLoop() {
         await getPosition()
 
         activeOrderExists = false
+            //console.log('rck1')
 
         return new Promise(resolve => {
+            //console.log('rck2')
 
             if (minOwnedContractsToStartClosingPosition != 0 && ownedContracts < minOwnedContractsToStartClosingPosition) {
                 process.stdout.write(` [ACP] Min Contracts is ${minOwnedContractsToStartClosingPosition}`.brightRed.bgBlack)
-
+                    //console.log('rck3')
             } else if (positionSide == 'Sell') {
+                //console.log('rck4')
                 process.stdout.write(` [ACP] positionSide is Buy`.brightRed.bgBlack)
             } else if (qtdContractsToClosePosition > 0) {
+                //console.log('rck5')
 
                 let qtdClosePositionOrders = 0
                 bybitApiCalls++
                 client.queryActiveOrder({ symbol: 'BTCUSD' })
                     .then(async response => {
+                        //console.log('rck6')
 
                         debugFile(response, 'closePosition/queryActiveOrder')
                             //console.log("RESPONSE queryActiveOrder: ", response);
@@ -458,10 +463,12 @@ async function mainLoop() {
 
                         if (!isLongActive && (ownedContracts <= qtdContractsToBuy)) {
                             qtdContractsToClosePosition = ownedContracts + 1
+                                //console.log('rck7')
                         }
 
                         //console.log((new Date().getTime() - lastClosePositionOrderDate.getTime()))
                         if (qtdClosePositionOrders == 0 && ((new Date().getTime() - lastClosePositionOrderDate.getTime()) > 3000)) { //protecao para nao encavalar shorts
+                            //console.log('rck8')
                             bybitApiCalls++
                             if (enableSounds) sound.play("D:\\workspace\\bybit\\abbot\\buybit-machine\\tick.mp3", 0.2)
                             client.placeActiveOrder({ order_type: 'Limit', side: 'Sell', symbol: 'BTCUSD', qty: qtdContractsToClosePosition, price: price + 1, time_in_force: 'GoodTillCancel' })
@@ -485,6 +492,7 @@ async function mainLoop() {
                     });
 
             }
+            //console.log('rck9')
             resolve('')
         });
     }
@@ -805,7 +813,7 @@ async function mainLoop() {
 
             }
 
-        } else if (command.search("take profit!") == 0 && !isLongActive) {
+        } else if (command.search("take profit!") == 0 && isLongActive) {
             process.stdout.write(command.brightYellow.bgBlack)
             await closePosition(Number(lastPrice))
         } else {
