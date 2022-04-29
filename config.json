@@ -1,5 +1,5 @@
 {
-    "mainLoopDelay": 2333,
+    "mainLoopDelay": 3333,
     "priceDiffMark_1": 1000,
     "priceDiffMark_2": 2000,
     "priceDiffMark_3": 3000,
@@ -15,7 +15,7 @@
     "liqBarsThreshold": 999,
     "priceDistThreshold": 1500,
 
-    "minDelayBetweenOrders": 2187,
+    "minDelayBetweenOrders": 4374,
     "autoManageOrderPrice": true,
     "lowPriceGoodToBuy1": 35999,
 
@@ -23,10 +23,10 @@
     "autoMinPriceDistance_options": "3, 6, 9, 27, 33, 54, 66, 81, 99, 132, 164, 198, 243, 333, 396, 486, 576, 666, 729, 882, 999, 1332, 2187, 4374, 6666",
     "autoMinPriceDistance_options2": "3, 9, 27, 81, 243, 729, 2187, 6561, 19683",
 
-    "maxOwnContracts": 1332,
-    "qtdContractsToBuy": 9,
-    "autoMinPriceDistance": 576,
-    "considerClosingPositionPriceDistance": 133,
+    "maxOwnContracts": 333,
+    "qtdContractsToBuy": 1,
+    "autoMinPriceDistance": 243,
+    "considerClosingPositionPriceDistance": 729,
     "qtdContractsToClosePosition": 27,
     "minOwnedContractsToStartClosingPosition": 27,
     "ancientOrderMinutes": 0.9,
