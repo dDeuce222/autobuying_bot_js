@@ -97,6 +97,9 @@ let skipLineFeedThisRound = false
 let samePrice1x = false
 let samePrice2x = false
 let lastClosePositionOrderDate = new Date()
+let shortExitRunning = false
+let lastCloseShortOrderId = ''
+let startingLongPosition = false
 
 const wsConfig = {
     key: API_KEY,
@@ -145,19 +148,10 @@ process.stdin.on('keypress', (chunk, key) => {
 
 mainLoop();
 
-/* iohook.on("keypress", event => {
-    console.log(event);
-    // {keychar: 'f', keycode: 19, rawcode: 15, type: 'keypress'}
-});
-
-iohook.start(false); */
-
 async function mainLoop() {
 
     ws.on('update', async data => {
 
-
-        //console.log('data : ' + JSON.stringify(data))
         console.log('[ '.brightCyan.bgBlack +
             'ORDER '.brightYellow.bgBlack +
             data.data[0].side.brightYellow.bgBlack +
@@ -181,7 +175,11 @@ async function mainLoop() {
             if (data.data[0].order_status == 'Filled' && enableSounds) {
                 sound.play("D:\\workspace\\bybit\\abbot\\buybit-machine\\money-soundfx.mp3", 0.06)
                 lastClosePositionOrderDate = new Date()
+
+                if (data.data[0].side == 'Buy') startingLongPosition = false
+
             }
+            //if (data.data[0].order_id = lastCloseShortOrderId) shortExitRunning = false
             let dtnow = new Date()
 
             let logOutput = dtnow.toString().replace('GMT-0300 (Brasilia Standard Time)', '')
@@ -220,7 +218,7 @@ async function mainLoop() {
     console.log('                       :                    '.brightWhite.bgBlack)
     console.log()
 
-    removeOlderOrders()
+    clearAllOrders() // remove ofertas existentes
 
     await new Promise(resolve => setTimeout(resolve, 3000))
 
@@ -276,7 +274,6 @@ async function mainLoop() {
                 minOwnedContractsToStartClosingPosition = obj.minOwnedContractsToStartClosingPosition
                 ancientClosePositionOrderMinutes = obj.ancientClosePositionOrderMinutes
                 enableSounds = obj.enableSounds
-
                 resolve('')
             });
         });
@@ -319,10 +316,10 @@ async function mainLoop() {
                     positionMargin = response.result.position_margin
                     positionSide = response.result.side
 
-                    if (response.result.side == 'Sell')
-                        isLongActive = false
-                    else
+                    if (response.result.side == 'Buy')
                         isLongActive = true
+                    else
+                        isLongActive = false
 
                     resolve('')
                 })
@@ -334,7 +331,7 @@ async function mainLoop() {
         });
     }
 
-    async function removeOlderOrders() {
+    async function clearAllOrders() {
         return new Promise(resolve => {
 
             bybitApiCalls++
@@ -349,9 +346,9 @@ async function mainLoop() {
 
                 }).catch(err => {
                     debugFile(err, 'queryActiveOrder')
-                    console.error("removeOlderOrders queryActiveOrder inverse error: ", err)
+                    console.error("clearAllOrders queryActiveOrder inverse error: ", err)
                 });
-
+            resolve('')
         });
     }
 
@@ -386,10 +383,11 @@ async function mainLoop() {
 
                         process.stdout.write(`Min pdist: ${minPriceDistanceOrder}`.yellow.bgBlack)
 
-                    } else if (Number(pdist) > -5) {
+                    } else if (Number(pdist) > -5) { // protecao pra nao comprar com valor aproximado
                         process.stdout.write(`Price too close @ ${Number(pdist).toFixed(2).brightYellow.bgBlack} `)
+                        console.log()
 
-                    } else {
+                    } else { // cria ordem long
 
                         bybitApiCalls++
                         if (enableSounds) sound.play("D:\\workspace\\bybit\\abbot\\buybit-machine\\tick.mp3", 0.3)
@@ -424,28 +422,26 @@ async function mainLoop() {
 
     async function closePosition(price) {
 
-        await getPosition()
+        await getPosition() // atualiza ownedContracts, isLongActive, etc..
 
         activeOrderExists = false
-            //console.log('rck1')
 
         return new Promise(resolve => {
-            //console.log('rck2')
 
             if (minOwnedContractsToStartClosingPosition != 0 && ownedContracts < minOwnedContractsToStartClosingPosition) {
                 process.stdout.write(` [ACP] Min Contracts is ${minOwnedContractsToStartClosingPosition}`.brightRed.bgBlack)
-                    //console.log('rck3')
             } else if (positionSide == 'Sell') {
-                //console.log('rck4')
                 process.stdout.write(` [ACP] positionSide is Buy`.brightRed.bgBlack)
             } else if (qtdContractsToClosePosition > 0) {
-                //console.log('rck5')
+
+                if (isLongActive && qtdContractsToClosePosition > ownedContracts) {
+                    qtdContractsToClosePosition = ownedContracts
+                }
 
                 let qtdClosePositionOrders = 0
                 bybitApiCalls++
                 client.queryActiveOrder({ symbol: 'BTCUSD' })
-                    .then(async response => {
-                        //console.log('rck6')
+                    .then(async response => { // verifica se ja existe oferta de short aguardando
 
                         debugFile(response, 'closePosition/queryActiveOrder')
                             //console.log("RESPONSE queryActiveOrder: ", response);
@@ -461,17 +457,11 @@ async function mainLoop() {
 
                         }
 
-                        if (!isLongActive && (ownedContracts <= qtdContractsToBuy)) {
-                            qtdContractsToClosePosition = ownedContracts + 1
-                                //console.log('rck7')
-                        }
-
                         //console.log((new Date().getTime() - lastClosePositionOrderDate.getTime()))
                         if (qtdClosePositionOrders == 0 && ((new Date().getTime() - lastClosePositionOrderDate.getTime()) > 3000)) { //protecao para nao encavalar shorts
-                            //console.log('rck8')
                             bybitApiCalls++
                             if (enableSounds) sound.play("D:\\workspace\\bybit\\abbot\\buybit-machine\\tick.mp3", 0.2)
-                            client.placeActiveOrder({ order_type: 'Limit', side: 'Sell', symbol: 'BTCUSD', qty: qtdContractsToClosePosition, price: price + 1, time_in_force: 'GoodTillCancel' })
+                            client.placeActiveOrder({ order_type: 'Limit', side: 'Sell', symbol: 'BTCUSD', qty: qtdContractsToClosePosition, price: Number(lastPrice) + 1, time_in_force: 'GoodTillCancel' })
                                 .then(response => {
                                     debugFile(response, 'closePosition')
                                         //console.log("RESPONSE: ", response)
@@ -492,7 +482,6 @@ async function mainLoop() {
                     });
 
             }
-            //console.log('rck9')
             resolve('')
         });
     }
@@ -518,7 +507,6 @@ async function mainLoop() {
         });
     }
 
-
     async function closeOrderByID(orderId) {
         //console.log()
         return new Promise(resolve => {
@@ -538,11 +526,42 @@ async function mainLoop() {
         });
     }
 
+    async function startLongPosition() {
+        return new Promise(resolve => {
+
+            startingLongPosition = true
+
+            client.placeActiveOrder({ order_type: 'Limit', side: 'Buy', symbol: 'BTCUSD', qty: 1, price: lastPrice, time_in_force: 'GoodTillCancel' })
+                .then(response => {
+                    debugFile(response, 'placeActiveOrder')
+                        //console.log("RESPONSE: ", response)
+                    lastOrderId = response.result.order_id
+                    lastOrderPrice = response.result.price
+                    lastOrderCreatedAt = response.result.created_at
+                    lastOrderQty = response.result.qty
+                    lastOfferDate = new Date()
+                    resolve('')
+                })
+                .catch(err => {
+                    debugFile(err, 'placeActiveOrder')
+                    console.error("placeActiveOrder error: ", err)
+                    resolve('')
+                });
+
+        });
+
+    }
+
     async function calculations() {
 
         return new Promise(resolve => {
 
-            pdist = Number(lastPrice - entryPrice).toFixed(2)
+            if (isLongActive)
+                pdist = Number(lastPrice - entryPrice).toFixed(2)
+            else
+                pdist = Number(entryPrice - lastPrice).toFixed(2)
+
+
             if (Number(pdist) >= Number(pdistMax)) pdistMax = pdist
             if (Number(pdist) <= Number(pdistMin)) pdistMin = pdist
 
@@ -601,7 +620,7 @@ async function mainLoop() {
                 bybitApiCallsPerMinute = (bybitApiCalls / ((new Date().getTime() - dtCalcApiCals.getTime()) / 1000) * 60)
 
 
-                if (lastOrderCreatedAt != null) {
+                if (lastOrderCreatedAt != null) { // check ancient Long orders
                     let dt = new Date(lastOrderCreatedAt)
                     let timePassedOfActiveOrder = new Date().getTime() - dt.getTime()
 
@@ -610,7 +629,7 @@ async function mainLoop() {
                     }
                 }
 
-                if (lastClosePositionOrderCreatedAt != null) {
+                if (lastClosePositionOrderCreatedAt != null) { // check ancient Short orders
                     let dtlcp = new Date(lastClosePositionOrderCreatedAt)
                     let timePassedOfClosePositionActiveOrder = new Date().getTime() - dtlcp.getTime()
                     if (timePassedOfClosePositionActiveOrder > (ancientClosePositionOrderMinutes * 1000 * 60)) {
@@ -765,36 +784,49 @@ async function mainLoop() {
 
         process.stdout.write(` `.grey.bgBlack)
         if (Number(pdist) >= Number(pdistMax)) {
-            process.stdout.write(utils.indent(Number(pdist).toFixed(0), Number(pdist).toFixed(0).toString().length - 1, true).white.bgBlue)
+            process.stdout.write(utils.indent(Number(pdist).toFixed(0), Number(pdist).toFixed(0).toString().length + 1, true).white.bgBlue)
         } else if (Number(pdist) <= Number(pdistMin)) {
-            process.stdout.write(utils.indent(Number(pdist).toFixed(0), Number(pdist).toFixed(0).toString().length - 1, true).white.bgRed)
+            process.stdout.write(utils.indent(Number(pdist).toFixed(0), Number(pdist).toFixed(0).toString().length + 1, true).white.bgRed)
         } else if (Number(pdist) > 0)
-            process.stdout.write(utils.indent(Number(pdist).toFixed(0), Number(pdist).toFixed(0).toString().length - 1, true).brightYellow.bgBlack)
+            process.stdout.write(utils.indent(Number(pdist).toFixed(0), Number(pdist).toFixed(0).toString().length + 1, true).brightYellow.bgBlack)
         else
-            process.stdout.write(utils.indent(Number(pdist).toFixed(0), Number(pdist).toFixed(0).toString().length - 1, true).white.bgBlack)
+            process.stdout.write(utils.indent(Number(pdist).toFixed(0), Number(pdist).toFixed(0).toString().length + 1, true).white.bgBlack)
 
-        process.stdout.write(' ' + utils.indent((currentMaxPrice - currentMinPrice).toFixed(0), 4, true).black.bgGrey)
-        process.stdout.write(' ' + Math.abs(Number(pdistMax).toFixed(0)).toString().cyan.bgBlack)
+        //process.stdout.write(' ' + utils.indent((currentMaxPrice - currentMinPrice).toFixed(0), 4, true).black.bgGrey)
+        process.stdout.write(' ['.cyan.bgBlack + considerClosingPositionPriceDistance.toString().grey.bgBlack)
+        process.stdout.write('<'.grey.bgBlack)
+        process.stdout.write('<'.white.bgBlack)
+        process.stdout.write(Math.abs(Number(pdistMax).toFixed(0)).toString().cyan.bgBlack)
         process.stdout.write(' '.grey.bgBlack)
         utils.printPriceRangeBars(entryPrice, lastPrice, considerClosingPositionPriceDistance, priceDistThreshold, isLongActive)
         process.stdout.write(' '.grey.bgBlack)
         process.stdout.write(Math.abs(Number(pdistMin).toFixed(0)).toString().red.bgBlack)
-        process.stdout.write('|'.magenta.bgBlack)
+        process.stdout.write('>'.white.bgBlack)
+        process.stdout.write('>'.grey.bgBlack)
+        process.stdout.write(autoMinPriceDistance.toString().grey.bgBlack + ']'.red.bgBlack)
+
+
+        process.stdout.write(' ['.green.bgBlack)
+            /*         if (!isLongActive && !shortExitRunning) {
+                        await shortExit()
+                    } */
+
         utils.printLiqBars(lastPrice, liqPrice, liqBarsThreshold, isLongActive)
-        process.stdout.write('|'.magenta.bgBlack)
+        process.stdout.write('] '.green.bgBlack)
 
         if (Number(unrealizedPNL) > 0)
-            process.stdout.write(utils.indent(Number(unrealizedPNL).toFixed(8), 10, true).yellow.bgBlack)
+            process.stdout.write(utils.indent(Number(unrealizedPNL).toFixed(8), 9, true).yellow.bgBlack)
         else
-            process.stdout.write(utils.indent(Number(unrealizedPNL).toFixed(8), 10, true).grey.bgBlack)
+            process.stdout.write(utils.indent(Number(unrealizedPNL).toFixed(8), 9, true).grey.bgBlack)
 
-        process.stdout.write(' '.white.bgBlack)
-        process.stdout.write(utils.indent(Number(PLNonRealized).toFixed(1), 3, true).brightYellow.bgBlack + '%'.white.bgBlack)
+        process.stdout.write(' ' + utils.indent(Number(PLNonRealized).toFixed(1), 3, true).grey.bgBlack + '%'.grey.bgBlack)
         process.stdout.write(' '.bgBlack)
 
         if (command.search("Avoiding Liquidation!") == 0) {
             process.stdout.write(command.brightYellow.bgRed)
             avoidLiquidation(lastPrice)
+        } else if (ownedContracts == 0 && !isLongActive & !startingLongPosition) {
+            await startLongPosition()
         } else if (command.search("GBuy") == 0 || command.search("Auto") == 0) {
             process.stdout.write(command.white.bgBlack)
             process.stdout.write("_ ".grey.bgBlack)
@@ -815,7 +847,8 @@ async function mainLoop() {
 
         } else if (command.search("take profit!") == 0 && isLongActive) {
             process.stdout.write(command.brightYellow.bgBlack)
-            await closePosition(Number(lastPrice))
+            await closePosition()
+
         } else {
             process.stdout.write(command.yellow.bgBlack)
         }
@@ -823,24 +856,6 @@ async function mainLoop() {
         process.stdout.write(" ".grey.bgBlack)
 
         if (!skipLineFeedThisRound) console.log()
-
-    }
-
-    function printLogFile() {
-
-        let dtnow = new Date()
-
-        let logOutput = dtnow.toString().replace('GMT-0300 (Brasilia Standard Time)', '')
-        logOutput = logOutput + "owned:" + ownedContracts + " "
-        logOutput = logOutput + "entryPrice:" + Number(entryPrice).toFixed(2) + " "
-        logOutput = logOutput + "liqPrice:" + Number(liqPrice).toFixed(2) + " "
-        logOutput = logOutput + "PLNonRealized:" + Number(PLNonRealized).toFixed(2)
-        logOutput = logOutput + "lastPrice:" + Number(lastPrice).toFixed(2) + " \n"
-
-        fs.appendFile('bybit.log', logOutput, (err) => {
-            if (err) throw err;
-            //console.log('Log file updated!');
-        });
 
     }
 
@@ -861,23 +876,4 @@ async function mainLoop() {
 
     }
 
-    const getCursorPos = () => new Promise((resolve) => {
-        const termcodes = { cursorGetPosition: '\u001b[6n' };
-
-        process.stdin.setEncoding('utf8');
-        process.stdin.setRawMode(true);
-
-        const readfx = function() {
-            const buf = process.stdin.read();
-            const str = JSON.stringify(buf); // "\u001b[9;1R"
-            const regex = /\[(.*)/g;
-            const xy = regex.exec(str)[0].replace(/\[|R"/g, '').split(';');
-            const pos = { rows: xy[0], cols: xy[1] };
-            process.stdin.setRawMode(false);
-            resolve(pos);
-        }
-
-        process.stdin.once('readable', readfx);
-        process.stdout.write(termcodes.cursorGetPosition);
-    })
 }

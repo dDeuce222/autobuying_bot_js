@@ -1,5 +1,5 @@
 {
-    "mainLoopDelay": 3333,
+    "mainLoopDelay": 2333,
     "priceDiffMark_1": 1000,
     "priceDiffMark_2": 2000,
     "priceDiffMark_3": 3000,
@@ -9,31 +9,32 @@
     "autoRaiseOfferIncrement": 0.3,
     "minPriceDistanceOrder": 100,
     "minPriceDistanceOrderDescription": "Minimo de distancia pra pdist, no modo nao automatico",
-    "excludeFromDebugLog": ["getTickers", "getPosition", "placeActiveOrder/queryActiveOrder", "queryActiveOrder", "closeOrderByID", "placeActiveOrder", "avoidLiquidation_"],
+    "excludeFromDebugLog": ["getTickers", "getPosition", "placeActiveOrder/queryActiveOrder", "queryActiveOrder", "closeOrderByID", "placeActiveOrder", "avoidLiquidation_", "shortExit_", "startLongPosition_"],
     "highChangeThreshold": 10,
     "headerInterval": 66,
     "liqBarsThreshold": 999,
     "priceDistThreshold": 1500,
 
-    "minDelayBetweenOrders": 6561,
+    "minDelayBetweenOrders": 2187,
     "autoManageOrderPrice": true,
     "lowPriceGoodToBuy1": 35999,
 
-    "autoMinPriceDistance_options": "3, 6, 9, 27, 33, 54, 66, 81, 99, 132, 198, 243, 333, 396, 486, 576, 666, 729, 882, 999, 1332, 2187, 4374, 6666",
+    "autoMinPriceDistance_info": "// 5 minimo hardcode",
+    "autoMinPriceDistance_options": "3, 6, 9, 27, 33, 54, 66, 81, 99, 132, 164, 198, 243, 333, 396, 486, 576, 666, 729, 882, 999, 1332, 2187, 4374, 6666",
     "autoMinPriceDistance_options2": "3, 9, 27, 81, 243, 729, 2187, 6561, 19683",
 
-    "maxOwnContracts": 2187,
-    "qtdContractsToBuy": 1,
-    "offerOffsetDown": 9,
-    "autoOfferOffsetDown": 3,
-    "ancientOrderMinutes": 0.3,
-    "autoMinPriceDistance": 243,
-
-    "considerClosingPositionPriceDistance": 81,
+    "maxOwnContracts": 1332,
+    "qtdContractsToBuy": 9,
+    "autoMinPriceDistance": 576,
+    "considerClosingPositionPriceDistance": 133,
     "qtdContractsToClosePosition": 27,
-    "minOwnedContractsToStartClosingPosition": 9,
+    "minOwnedContractsToStartClosingPosition": 27,
+    "ancientOrderMinutes": 0.9,
+    "ancientClosePositionOrderMinutes": 0.9,
+    "offerOffsetDown": 3,
+    "autoOfferOffsetDown": 3,
 
-    "ancientClosePositionOrderMinutes": 0.3,
+
     "liquidationDistAlert": 333,
     "liquidationQtdOffer": 9,
 
