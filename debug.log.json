@@ -69002,3 +69002,6622 @@
   "rate_limit_reset_ms": 1651203091617,
   "rate_limit": 600
 }}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651256230.994040",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651256230990,
+  "rate_limit": 600
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651256427.760247",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651256427757,
+  "rate_limit": 600
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651257014.479993",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651257014476,
+  "rate_limit": 600
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651417619.265791",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651417619262,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651451651.568199",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651451651564,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "969c3e04-2517-4aa3-8f7c-6a6fc2c14431",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 38800.5,
+    "qty": 81,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 81,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-02T00:34:12.176Z",
+    "updated_at": "2022-05-02T00:34:12.176Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651451652.176289",
+  "rate_limit_status": 99,
+  "rate_limit_reset_ms": 1651451652174,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38800.5",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 373505905
+      },
+      "last_exec_time": "1651451652.176167",
+      "leaves_qty": 81,
+      "leaves_value": "0.0020876",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T00:34:12.176075568Z",
+      "updated_at": "2022-05-02T00:34:12.183821228Z",
+      "order_id": "969c3e04-2517-4aa3-8f7c-6a6fc2c14431",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651451654.757164",
+  "rate_limit_status": 598,
+  "rate_limit_reset_ms": 1651451654754,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467081.902946",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651467081899,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "c061c7bc-d90e-46bc-bd9b-03c5fe876f99",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 38848,
+    "qty": 81,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 81,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-02T04:51:22.326Z",
+    "updated_at": "2022-05-02T04:51:22.326Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651467082.327014",
+  "rate_limit_status": 83,
+  "rate_limit_reset_ms": 1651467082324,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467085.065609",
+  "rate_limit_status": 598,
+  "rate_limit_reset_ms": 1651467085063,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467088.241187",
+  "rate_limit_status": 597,
+  "rate_limit_reset_ms": 1651467088238,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "9d38096a-f9da-4db5-b107-ea56daa36531",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 38936,
+    "qty": 81,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 81,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-02T04:51:28.660Z",
+    "updated_at": "2022-05-02T04:51:28.660Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651467088.660363",
+  "rate_limit_status": 82,
+  "rate_limit_reset_ms": 1651467088658,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38936",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 395825704
+      },
+      "last_exec_time": "1651467088.660766",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208033",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:51:28.660131618Z",
+      "updated_at": "2022-05-02T04:51:28.667062996Z",
+      "order_id": "9d38096a-f9da-4db5-b107-ea56daa36531",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467091.429641",
+  "rate_limit_status": 596,
+  "rate_limit_reset_ms": 1651467091427,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38936",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 395825704
+      },
+      "last_exec_time": "1651467088.660766",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208033",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:51:28.660131618Z",
+      "updated_at": "2022-05-02T04:51:28.667062996Z",
+      "order_id": "9d38096a-f9da-4db5-b107-ea56daa36531",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467094.606315",
+  "rate_limit_status": 595,
+  "rate_limit_reset_ms": 1651467094603,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38936",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 395825704
+      },
+      "last_exec_time": "1651467088.660766",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208033",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:51:28.660131618Z",
+      "updated_at": "2022-05-02T04:51:28.667062996Z",
+      "order_id": "9d38096a-f9da-4db5-b107-ea56daa36531",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467097.814675",
+  "rate_limit_status": 594,
+  "rate_limit_reset_ms": 1651467097813,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38936",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 395825704
+      },
+      "last_exec_time": "1651467088.660766",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208033",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:51:28.660131618Z",
+      "updated_at": "2022-05-02T04:51:28.667062996Z",
+      "order_id": "9d38096a-f9da-4db5-b107-ea56daa36531",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467100.966101",
+  "rate_limit_status": 593,
+  "rate_limit_reset_ms": 1651467100964,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38936",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 395825704
+      },
+      "last_exec_time": "1651467088.660766",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208033",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:51:28.660131618Z",
+      "updated_at": "2022-05-02T04:51:28.667062996Z",
+      "order_id": "9d38096a-f9da-4db5-b107-ea56daa36531",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467104.150306",
+  "rate_limit_status": 592,
+  "rate_limit_reset_ms": 1651467104147,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38936",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 395825704
+      },
+      "last_exec_time": "1651467088.660766",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208033",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:51:28.660131618Z",
+      "updated_at": "2022-05-02T04:51:28.667062996Z",
+      "order_id": "9d38096a-f9da-4db5-b107-ea56daa36531",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467107.318051",
+  "rate_limit_status": 591,
+  "rate_limit_reset_ms": 1651467107315,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38936",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 395825704
+      },
+      "last_exec_time": "1651467088.660766",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208033",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:51:28.660131618Z",
+      "updated_at": "2022-05-02T04:51:28.667062996Z",
+      "order_id": "9d38096a-f9da-4db5-b107-ea56daa36531",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467110.509327",
+  "rate_limit_status": 590,
+  "rate_limit_reset_ms": 1651467110507,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38936",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 395825704
+      },
+      "last_exec_time": "1651467088.660766",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208033",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:51:28.660131618Z",
+      "updated_at": "2022-05-02T04:51:28.667062996Z",
+      "order_id": "9d38096a-f9da-4db5-b107-ea56daa36531",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467113.723930",
+  "rate_limit_status": 589,
+  "rate_limit_reset_ms": 1651467113721,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38936",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 395825704
+      },
+      "last_exec_time": "1651467088.660766",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208033",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:51:28.660131618Z",
+      "updated_at": "2022-05-02T04:51:28.667062996Z",
+      "order_id": "9d38096a-f9da-4db5-b107-ea56daa36531",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467116.885420",
+  "rate_limit_status": 588,
+  "rate_limit_reset_ms": 1651467116882,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38936",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 395825704
+      },
+      "last_exec_time": "1651467088.660766",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208033",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:51:28.660131618Z",
+      "updated_at": "2022-05-02T04:51:28.667062996Z",
+      "order_id": "9d38096a-f9da-4db5-b107-ea56daa36531",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467120.085628",
+  "rate_limit_status": 587,
+  "rate_limit_reset_ms": 1651467120083,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38936",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 395825704
+      },
+      "last_exec_time": "1651467088.660766",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208033",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:51:28.660131618Z",
+      "updated_at": "2022-05-02T04:51:28.667062996Z",
+      "order_id": "9d38096a-f9da-4db5-b107-ea56daa36531",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467123.251579",
+  "rate_limit_status": 586,
+  "rate_limit_reset_ms": 1651467123249,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467126.408011",
+  "rate_limit_status": 585,
+  "rate_limit_reset_ms": 1651467126405,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467129.585345",
+  "rate_limit_status": 584,
+  "rate_limit_reset_ms": 1651467129582,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "5fe685ed-9937-43d8-a207-94896e15b6bf",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 38937,
+    "qty": 81,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 81,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-02T04:52:10.005Z",
+    "updated_at": "2022-05-02T04:52:10.005Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651467130.005904",
+  "rate_limit_status": 99,
+  "rate_limit_reset_ms": 1651467130002,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38937",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 395957272
+      },
+      "last_exec_time": "1651467130.005437",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208028",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:10.005321686Z",
+      "updated_at": "2022-05-02T04:52:10.01328729Z",
+      "order_id": "5fe685ed-9937-43d8-a207-94896e15b6bf",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467132.753480",
+  "rate_limit_status": 583,
+  "rate_limit_reset_ms": 1651467132752,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38937",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 395957272
+      },
+      "last_exec_time": "1651467130.005437",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208028",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:10.005321686Z",
+      "updated_at": "2022-05-02T04:52:10.01328729Z",
+      "order_id": "5fe685ed-9937-43d8-a207-94896e15b6bf",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467135.950047",
+  "rate_limit_status": 582,
+  "rate_limit_reset_ms": 1651467135943,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38937",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 395957272
+      },
+      "last_exec_time": "1651467130.005437",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208028",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:10.005321686Z",
+      "updated_at": "2022-05-02T04:52:10.01328729Z",
+      "order_id": "5fe685ed-9937-43d8-a207-94896e15b6bf",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467139.104647",
+  "rate_limit_status": 581,
+  "rate_limit_reset_ms": 1651467139102,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38937",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 395957272
+      },
+      "last_exec_time": "1651467130.005437",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208028",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:10.005321686Z",
+      "updated_at": "2022-05-02T04:52:10.01328729Z",
+      "order_id": "5fe685ed-9937-43d8-a207-94896e15b6bf",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467142.330854",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651467142325,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38937",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 395957272
+      },
+      "last_exec_time": "1651467130.005437",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208028",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:10.005321686Z",
+      "updated_at": "2022-05-02T04:52:10.01328729Z",
+      "order_id": "5fe685ed-9937-43d8-a207-94896e15b6bf",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467145.460199",
+  "rate_limit_status": 598,
+  "rate_limit_reset_ms": 1651467145457,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38937",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 395957272
+      },
+      "last_exec_time": "1651467130.005437",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208028",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:10.005321686Z",
+      "updated_at": "2022-05-02T04:52:10.01328729Z",
+      "order_id": "5fe685ed-9937-43d8-a207-94896e15b6bf",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467148.646423",
+  "rate_limit_status": 597,
+  "rate_limit_reset_ms": 1651467148644,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38937",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 395957272
+      },
+      "last_exec_time": "1651467130.005437",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208028",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:10.005321686Z",
+      "updated_at": "2022-05-02T04:52:10.01328729Z",
+      "order_id": "5fe685ed-9937-43d8-a207-94896e15b6bf",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467151.827268",
+  "rate_limit_status": 596,
+  "rate_limit_reset_ms": 1651467151825,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38937",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 395957272
+      },
+      "last_exec_time": "1651467130.005437",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208028",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:10.005321686Z",
+      "updated_at": "2022-05-02T04:52:10.01328729Z",
+      "order_id": "5fe685ed-9937-43d8-a207-94896e15b6bf",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467154.981959",
+  "rate_limit_status": 595,
+  "rate_limit_reset_ms": 1651467154979,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38937",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 395957272
+      },
+      "last_exec_time": "1651467130.005437",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208028",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:10.005321686Z",
+      "updated_at": "2022-05-02T04:52:10.01328729Z",
+      "order_id": "5fe685ed-9937-43d8-a207-94896e15b6bf",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467158.182921",
+  "rate_limit_status": 594,
+  "rate_limit_reset_ms": 1651467158181,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38937",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 395957272
+      },
+      "last_exec_time": "1651467130.005437",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208028",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:10.005321686Z",
+      "updated_at": "2022-05-02T04:52:10.01328729Z",
+      "order_id": "5fe685ed-9937-43d8-a207-94896e15b6bf",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467161.351974",
+  "rate_limit_status": 593,
+  "rate_limit_reset_ms": 1651467161349,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38937",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 395957272
+      },
+      "last_exec_time": "1651467130.005437",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208028",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:10.005321686Z",
+      "updated_at": "2022-05-02T04:52:10.01328729Z",
+      "order_id": "5fe685ed-9937-43d8-a207-94896e15b6bf",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467164.527934",
+  "rate_limit_status": 592,
+  "rate_limit_reset_ms": 1651467164525,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467167.709404",
+  "rate_limit_status": 591,
+  "rate_limit_reset_ms": 1651467167706,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467170.877387",
+  "rate_limit_status": 590,
+  "rate_limit_reset_ms": 1651467170874,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "45e640b3-d8be-458a-bc9c-7239ce8cef2c",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 38937.5,
+    "qty": 81,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 81,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-02T04:52:51.295Z",
+    "updated_at": "2022-05-02T04:52:51.295Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651467171.295758",
+  "rate_limit_status": 98,
+  "rate_limit_reset_ms": 1651467171293,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467174.049650",
+  "rate_limit_status": 589,
+  "rate_limit_reset_ms": 1651467174047,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467177.232402",
+  "rate_limit_status": 588,
+  "rate_limit_reset_ms": 1651467177231,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "d4345c7c-44e6-4f03-a5d0-ce62d314595f",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 38933,
+    "qty": 81,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 81,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-02T04:52:57.674Z",
+    "updated_at": "2022-05-02T04:52:57.674Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651467177.674855",
+  "rate_limit_status": 97,
+  "rate_limit_reset_ms": 1651467177672,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38933",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396056813
+      },
+      "last_exec_time": "1651467177.674454",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208049",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:57.674380164Z",
+      "updated_at": "2022-05-02T04:52:57.681967026Z",
+      "order_id": "d4345c7c-44e6-4f03-a5d0-ce62d314595f",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467180.375575",
+  "rate_limit_status": 587,
+  "rate_limit_reset_ms": 1651467180373,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38933",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396056813
+      },
+      "last_exec_time": "1651467177.674454",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208049",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:57.674380164Z",
+      "updated_at": "2022-05-02T04:52:57.681967026Z",
+      "order_id": "d4345c7c-44e6-4f03-a5d0-ce62d314595f",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467183.568719",
+  "rate_limit_status": 586,
+  "rate_limit_reset_ms": 1651467183567,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38933",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396056813
+      },
+      "last_exec_time": "1651467177.674454",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208049",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:57.674380164Z",
+      "updated_at": "2022-05-02T04:52:57.681967026Z",
+      "order_id": "d4345c7c-44e6-4f03-a5d0-ce62d314595f",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467186.731161",
+  "rate_limit_status": 585,
+  "rate_limit_reset_ms": 1651467186728,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38933",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396056813
+      },
+      "last_exec_time": "1651467177.674454",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208049",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:57.674380164Z",
+      "updated_at": "2022-05-02T04:52:57.681967026Z",
+      "order_id": "d4345c7c-44e6-4f03-a5d0-ce62d314595f",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467189.917900",
+  "rate_limit_status": 584,
+  "rate_limit_reset_ms": 1651467189916,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38933",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396056813
+      },
+      "last_exec_time": "1651467177.674454",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208049",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:57.674380164Z",
+      "updated_at": "2022-05-02T04:52:57.681967026Z",
+      "order_id": "d4345c7c-44e6-4f03-a5d0-ce62d314595f",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467193.083150",
+  "rate_limit_status": 583,
+  "rate_limit_reset_ms": 1651467193080,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38933",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396056813
+      },
+      "last_exec_time": "1651467177.674454",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208049",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:57.674380164Z",
+      "updated_at": "2022-05-02T04:52:57.681967026Z",
+      "order_id": "d4345c7c-44e6-4f03-a5d0-ce62d314595f",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467196.218249",
+  "rate_limit_status": 582,
+  "rate_limit_reset_ms": 1651467196215,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38933",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396056813
+      },
+      "last_exec_time": "1651467177.674454",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208049",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:57.674380164Z",
+      "updated_at": "2022-05-02T04:52:57.681967026Z",
+      "order_id": "d4345c7c-44e6-4f03-a5d0-ce62d314595f",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467199.371393",
+  "rate_limit_status": 581,
+  "rate_limit_reset_ms": 1651467199370,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38933",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396056813
+      },
+      "last_exec_time": "1651467177.674454",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208049",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:57.674380164Z",
+      "updated_at": "2022-05-02T04:52:57.681967026Z",
+      "order_id": "d4345c7c-44e6-4f03-a5d0-ce62d314595f",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467202.506130",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651467202502,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38933",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396056813
+      },
+      "last_exec_time": "1651467177.674454",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208049",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:57.674380164Z",
+      "updated_at": "2022-05-02T04:52:57.681967026Z",
+      "order_id": "d4345c7c-44e6-4f03-a5d0-ce62d314595f",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467205.668905",
+  "rate_limit_status": 598,
+  "rate_limit_reset_ms": 1651467205666,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38933",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396056813
+      },
+      "last_exec_time": "1651467177.674454",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208049",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:57.674380164Z",
+      "updated_at": "2022-05-02T04:52:57.681967026Z",
+      "order_id": "d4345c7c-44e6-4f03-a5d0-ce62d314595f",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467208.828934",
+  "rate_limit_status": 597,
+  "rate_limit_reset_ms": 1651467208822,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38933",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396056813
+      },
+      "last_exec_time": "1651467177.674454",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208049",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:57.674380164Z",
+      "updated_at": "2022-05-02T04:52:57.681967026Z",
+      "order_id": "d4345c7c-44e6-4f03-a5d0-ce62d314595f",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467211.982150",
+  "rate_limit_status": 596,
+  "rate_limit_reset_ms": 1651467211979,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38933",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396056813
+      },
+      "last_exec_time": "1651467177.674454",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208049",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:57.674380164Z",
+      "updated_at": "2022-05-02T04:52:57.681967026Z",
+      "order_id": "d4345c7c-44e6-4f03-a5d0-ce62d314595f",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467215.128280",
+  "rate_limit_status": 595,
+  "rate_limit_reset_ms": 1651467215125,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38933",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396056813
+      },
+      "last_exec_time": "1651467177.674454",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208049",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:57.674380164Z",
+      "updated_at": "2022-05-02T04:52:57.681967026Z",
+      "order_id": "d4345c7c-44e6-4f03-a5d0-ce62d314595f",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467218.296199",
+  "rate_limit_status": 594,
+  "rate_limit_reset_ms": 1651467218295,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38933",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396056813
+      },
+      "last_exec_time": "1651467177.674454",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208049",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:57.674380164Z",
+      "updated_at": "2022-05-02T04:52:57.681967026Z",
+      "order_id": "d4345c7c-44e6-4f03-a5d0-ce62d314595f",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467221.430859",
+  "rate_limit_status": 593,
+  "rate_limit_reset_ms": 1651467221428,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38933",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396056813
+      },
+      "last_exec_time": "1651467177.674454",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208049",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:57.674380164Z",
+      "updated_at": "2022-05-02T04:52:57.681967026Z",
+      "order_id": "d4345c7c-44e6-4f03-a5d0-ce62d314595f",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467224.601387",
+  "rate_limit_status": 592,
+  "rate_limit_reset_ms": 1651467224598,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38933",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396056813
+      },
+      "last_exec_time": "1651467177.674454",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208049",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:52:57.674380164Z",
+      "updated_at": "2022-05-02T04:52:57.681967026Z",
+      "order_id": "d4345c7c-44e6-4f03-a5d0-ce62d314595f",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467227.768143",
+  "rate_limit_status": 591,
+  "rate_limit_reset_ms": 1651467227765,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467230.924763",
+  "rate_limit_status": 590,
+  "rate_limit_reset_ms": 1651467230919,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467234.095998",
+  "rate_limit_status": 589,
+  "rate_limit_reset_ms": 1651467234094,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "373fbe01-236f-4b60-b8a4-eda9690b584a",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 38951,
+    "qty": 81,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 81,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-02T04:53:54.521Z",
+    "updated_at": "2022-05-02T04:53:54.521Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651467234.521609",
+  "rate_limit_status": 98,
+  "rate_limit_reset_ms": 1651467234518,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467237.262861",
+  "rate_limit_status": 588,
+  "rate_limit_reset_ms": 1651467237260,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467240.450460",
+  "rate_limit_status": 587,
+  "rate_limit_reset_ms": 1651467240447,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "741c6b75-7dd1-4d19-ae70-d86b544775fe",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 38957.5,
+    "qty": 81,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 81,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-02T04:54:00.875Z",
+    "updated_at": "2022-05-02T04:54:00.875Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651467240.875797",
+  "rate_limit_status": 97,
+  "rate_limit_reset_ms": 1651467240874,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467243.611215",
+  "rate_limit_status": 586,
+  "rate_limit_reset_ms": 1651467243608,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467246.767380",
+  "rate_limit_status": 585,
+  "rate_limit_reset_ms": 1651467246765,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "16efbbfd-250d-4457-959a-798caf603175",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 39043.5,
+    "qty": 81,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 81,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-02T04:54:07.186Z",
+    "updated_at": "2022-05-02T04:54:07.186Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651467247.186718",
+  "rate_limit_status": 96,
+  "rate_limit_reset_ms": 1651467247183,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467249.983208",
+  "rate_limit_status": 584,
+  "rate_limit_reset_ms": 1651467249982,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467253.166672",
+  "rate_limit_status": 583,
+  "rate_limit_reset_ms": 1651467253164,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "a14b222e-8f29-4acd-a963-75abde1aa100",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 39039.5,
+    "qty": 81,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 81,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-02T04:54:13.600Z",
+    "updated_at": "2022-05-02T04:54:13.600Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651467253.600287",
+  "rate_limit_status": 95,
+  "rate_limit_reset_ms": 1651467253599,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467256.366277",
+  "rate_limit_status": 582,
+  "rate_limit_reset_ms": 1651467256361,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467259.525315",
+  "rate_limit_status": 581,
+  "rate_limit_reset_ms": 1651467259523,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "4acb12db-1063-4209-a500-d6320d80cdf8",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 39028,
+    "qty": 81,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 81,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-02T04:54:19.949Z",
+    "updated_at": "2022-05-02T04:54:19.949Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651467259.949553",
+  "rate_limit_status": 94,
+  "rate_limit_reset_ms": 1651467259947,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467262.715352",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651467262713,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467265.899201",
+  "rate_limit_status": 598,
+  "rate_limit_reset_ms": 1651467265898,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "3106b13b-3ebe-4998-a158-9b11fb4de4c4",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 39046.5,
+    "qty": 81,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 81,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-02T04:54:26.365Z",
+    "updated_at": "2022-05-02T04:54:26.365Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651467266.366368",
+  "rate_limit_status": 93,
+  "rate_limit_reset_ms": 1651467266363,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "39046.5",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396307379
+      },
+      "last_exec_time": "1651467266.367596",
+      "leaves_qty": 81,
+      "leaves_value": "0.00207444",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:54:26.365872142Z",
+      "updated_at": "2022-05-02T04:54:26.374966797Z",
+      "order_id": "3106b13b-3ebe-4998-a158-9b11fb4de4c4",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467269.056461",
+  "rate_limit_status": 597,
+  "rate_limit_reset_ms": 1651467269053,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "39046.5",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396307379
+      },
+      "last_exec_time": "1651467266.367596",
+      "leaves_qty": 81,
+      "leaves_value": "0.00207444",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:54:26.365872142Z",
+      "updated_at": "2022-05-02T04:54:26.374966797Z",
+      "order_id": "3106b13b-3ebe-4998-a158-9b11fb4de4c4",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467272.244776",
+  "rate_limit_status": 596,
+  "rate_limit_reset_ms": 1651467272241,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467275.423753",
+  "rate_limit_status": 595,
+  "rate_limit_reset_ms": 1651467275419,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467278.604291",
+  "rate_limit_status": 594,
+  "rate_limit_reset_ms": 1651467278601,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "494cbba5-0d14-4ddf-b0b8-963d7857f81a",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 39044.5,
+    "qty": 81,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 81,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-02T04:54:39.032Z",
+    "updated_at": "2022-05-02T04:54:39.032Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651467279.032807",
+  "rate_limit_status": 92,
+  "rate_limit_reset_ms": 1651467279029,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467281.789059",
+  "rate_limit_status": 593,
+  "rate_limit_reset_ms": 1651467281786,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467284.936958",
+  "rate_limit_status": 592,
+  "rate_limit_reset_ms": 1651467284935,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "01531e85-f8fa-48c2-a8b4-d13c46967866",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 39063.5,
+    "qty": 81,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 81,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-02T04:54:45.356Z",
+    "updated_at": "2022-05-02T04:54:45.356Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651467285.357042",
+  "rate_limit_status": 91,
+  "rate_limit_reset_ms": 1651467285354,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "39063.5",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396346918
+      },
+      "last_exec_time": "1651467285.356553",
+      "leaves_qty": 81,
+      "leaves_value": "0.00207354",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:54:45.356456492Z",
+      "updated_at": "2022-05-02T04:54:45.364131166Z",
+      "order_id": "01531e85-f8fa-48c2-a8b4-d13c46967866",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467288.111685",
+  "rate_limit_status": 591,
+  "rate_limit_reset_ms": 1651467288108,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "39063.5",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396346918
+      },
+      "last_exec_time": "1651467285.356553",
+      "leaves_qty": 81,
+      "leaves_value": "0.00207354",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:54:45.356456492Z",
+      "updated_at": "2022-05-02T04:54:45.364131166Z",
+      "order_id": "01531e85-f8fa-48c2-a8b4-d13c46967866",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467291.285454",
+  "rate_limit_status": 590,
+  "rate_limit_reset_ms": 1651467291283,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "39063.5",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396346918
+      },
+      "last_exec_time": "1651467285.356553",
+      "leaves_qty": 81,
+      "leaves_value": "0.00207354",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:54:45.356456492Z",
+      "updated_at": "2022-05-02T04:54:45.364131166Z",
+      "order_id": "01531e85-f8fa-48c2-a8b4-d13c46967866",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467294.491768",
+  "rate_limit_status": 589,
+  "rate_limit_reset_ms": 1651467294489,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "39063.5",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396346918
+      },
+      "last_exec_time": "1651467285.356553",
+      "leaves_qty": 81,
+      "leaves_value": "0.00207354",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:54:45.356456492Z",
+      "updated_at": "2022-05-02T04:54:45.364131166Z",
+      "order_id": "01531e85-f8fa-48c2-a8b4-d13c46967866",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467297.677139",
+  "rate_limit_status": 588,
+  "rate_limit_reset_ms": 1651467297674,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "39063.5",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396346918
+      },
+      "last_exec_time": "1651467285.356553",
+      "leaves_qty": 81,
+      "leaves_value": "0.00207354",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:54:45.356456492Z",
+      "updated_at": "2022-05-02T04:54:45.364131166Z",
+      "order_id": "01531e85-f8fa-48c2-a8b4-d13c46967866",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467300.841273",
+  "rate_limit_status": 587,
+  "rate_limit_reset_ms": 1651467300838,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "39063.5",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396346918
+      },
+      "last_exec_time": "1651467285.356553",
+      "leaves_qty": 81,
+      "leaves_value": "0.00207354",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:54:45.356456492Z",
+      "updated_at": "2022-05-02T04:54:45.364131166Z",
+      "order_id": "01531e85-f8fa-48c2-a8b4-d13c46967866",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467304.049524",
+  "rate_limit_status": 586,
+  "rate_limit_reset_ms": 1651467304047,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "39063.5",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396346918
+      },
+      "last_exec_time": "1651467285.356553",
+      "leaves_qty": 81,
+      "leaves_value": "0.00207354",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:54:45.356456492Z",
+      "updated_at": "2022-05-02T04:54:45.364131166Z",
+      "order_id": "01531e85-f8fa-48c2-a8b4-d13c46967866",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467307.208812",
+  "rate_limit_status": 585,
+  "rate_limit_reset_ms": 1651467307205,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "39063.5",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396346918
+      },
+      "last_exec_time": "1651467285.356553",
+      "leaves_qty": 81,
+      "leaves_value": "0.00207354",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:54:45.356456492Z",
+      "updated_at": "2022-05-02T04:54:45.364131166Z",
+      "order_id": "01531e85-f8fa-48c2-a8b4-d13c46967866",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467310.404808",
+  "rate_limit_status": 584,
+  "rate_limit_reset_ms": 1651467310402,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "39063.5",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396346918
+      },
+      "last_exec_time": "1651467285.356553",
+      "leaves_qty": 81,
+      "leaves_value": "0.00207354",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:54:45.356456492Z",
+      "updated_at": "2022-05-02T04:54:45.364131166Z",
+      "order_id": "01531e85-f8fa-48c2-a8b4-d13c46967866",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467313.598766",
+  "rate_limit_status": 583,
+  "rate_limit_reset_ms": 1651467313596,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "39063.5",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396346918
+      },
+      "last_exec_time": "1651467285.356553",
+      "leaves_qty": 81,
+      "leaves_value": "0.00207354",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:54:45.356456492Z",
+      "updated_at": "2022-05-02T04:54:45.364131166Z",
+      "order_id": "01531e85-f8fa-48c2-a8b4-d13c46967866",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467316.743333",
+  "rate_limit_status": 582,
+  "rate_limit_reset_ms": 1651467316741,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "39063.5",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396346918
+      },
+      "last_exec_time": "1651467285.356553",
+      "leaves_qty": 81,
+      "leaves_value": "0.00207354",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:54:45.356456492Z",
+      "updated_at": "2022-05-02T04:54:45.364131166Z",
+      "order_id": "01531e85-f8fa-48c2-a8b4-d13c46967866",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467320.157555",
+  "rate_limit_status": 581,
+  "rate_limit_reset_ms": 1651467320153,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "39063.5",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396346918
+      },
+      "last_exec_time": "1651467285.356553",
+      "leaves_qty": 81,
+      "leaves_value": "0.00207354",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:54:45.356456492Z",
+      "updated_at": "2022-05-02T04:54:45.364131166Z",
+      "order_id": "01531e85-f8fa-48c2-a8b4-d13c46967866",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467323.104318",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651467323101,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "39063.5",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396346918
+      },
+      "last_exec_time": "1651467285.356553",
+      "leaves_qty": 81,
+      "leaves_value": "0.00207354",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:54:45.356456492Z",
+      "updated_at": "2022-05-02T04:54:45.364131166Z",
+      "order_id": "01531e85-f8fa-48c2-a8b4-d13c46967866",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467326.275130",
+  "rate_limit_status": 598,
+  "rate_limit_reset_ms": 1651467326273,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "39063.5",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396346918
+      },
+      "last_exec_time": "1651467285.356553",
+      "leaves_qty": 81,
+      "leaves_value": "0.00207354",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:54:45.356456492Z",
+      "updated_at": "2022-05-02T04:54:45.364131166Z",
+      "order_id": "01531e85-f8fa-48c2-a8b4-d13c46967866",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467329.468361",
+  "rate_limit_status": 597,
+  "rate_limit_reset_ms": 1651467329465,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "39063.5",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396346918
+      },
+      "last_exec_time": "1651467285.356553",
+      "leaves_qty": 81,
+      "leaves_value": "0.00207354",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:54:45.356456492Z",
+      "updated_at": "2022-05-02T04:54:45.364131166Z",
+      "order_id": "01531e85-f8fa-48c2-a8b4-d13c46967866",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467332.623619",
+  "rate_limit_status": 596,
+  "rate_limit_reset_ms": 1651467332620,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "39063.5",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396346918
+      },
+      "last_exec_time": "1651467285.356553",
+      "leaves_qty": 81,
+      "leaves_value": "0.00207354",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:54:45.356456492Z",
+      "updated_at": "2022-05-02T04:54:45.364131166Z",
+      "order_id": "01531e85-f8fa-48c2-a8b4-d13c46967866",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467335.815753",
+  "rate_limit_status": 595,
+  "rate_limit_reset_ms": 1651467335813,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "39063.5",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396346918
+      },
+      "last_exec_time": "1651467285.356553",
+      "leaves_qty": 81,
+      "leaves_value": "0.00207354",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:54:45.356456492Z",
+      "updated_at": "2022-05-02T04:54:45.364131166Z",
+      "order_id": "01531e85-f8fa-48c2-a8b4-d13c46967866",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467338.967303",
+  "rate_limit_status": 594,
+  "rate_limit_reset_ms": 1651467338965,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651467342.146961",
+  "rate_limit_status": 593,
+  "rate_limit_reset_ms": 1651467342145,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "7460a510-618e-4fad-b3ea-1afa8914ae6b",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 39001,
+    "qty": 81,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 81,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-02T04:55:42.552Z",
+    "updated_at": "2022-05-02T04:55:42.552Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651467342.553313",
+  "rate_limit_status": 98,
+  "rate_limit_reset_ms": 1651467342550,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "39001",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396470602
+      },
+      "last_exec_time": "1651467342.552897",
+      "leaves_qty": 81,
+      "leaves_value": "0.00207686",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:55:42.552791197Z",
+      "updated_at": "2022-05-02T04:55:42.560030891Z",
+      "order_id": "7460a510-618e-4fad-b3ea-1afa8914ae6b",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467345.260634",
+  "rate_limit_status": 592,
+  "rate_limit_reset_ms": 1651467345258,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "39001",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 396470602
+      },
+      "last_exec_time": "1651467342.552897",
+      "leaves_qty": 81,
+      "leaves_value": "0.00207686",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T04:55:42.552791197Z",
+      "updated_at": "2022-05-02T04:55:42.560030891Z",
+      "order_id": "7460a510-618e-4fad-b3ea-1afa8914ae6b",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651467348.425257",
+  "rate_limit_status": 591,
+  "rate_limit_reset_ms": 1651467348424,
+  "rate_limit": 600
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651486718.753818",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651486718750,
+  "rate_limit": 600
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651500216.787698",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651500216784,
+  "rate_limit": 600
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651503735.593333",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651503735590,
+  "rate_limit": 600
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651504968.980775",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651504968979,
+  "rate_limit": 600
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651522737.722222",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651522737719,
+  "rate_limit": 600
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651524294.697618",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651524294693,
+  "rate_limit": 600
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Buy",
+      "order_type": "Limit",
+      "price": "38398",
+      "qty": 1,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 491260379
+      },
+      "last_exec_time": "1651524297.381419",
+      "leaves_qty": 1,
+      "leaves_value": "0.00002604",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T20:44:57.381304202Z",
+      "updated_at": "2022-05-02T20:44:57.388349841Z",
+      "order_id": "a357206a-66ac-4900-a2d1-1648347c227e",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651524341.438803",
+  "rate_limit_status": 598,
+  "rate_limit_reset_ms": 1651524341437,
+  "rate_limit": 600
+}}] 
+[closeOrderByID] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "a357206a-66ac-4900-a2d1-1648347c227e",
+    "symbol": "BTCUSD",
+    "side": "Buy",
+    "order_type": "Limit",
+    "price": 38398,
+    "qty": 1,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "New",
+    "last_exec_time": 1651524297.381419,
+    "last_exec_price": 0,
+    "leaves_qty": 1,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-02T20:44:57.381Z",
+    "updated_at": "2022-05-02T20:45:41.863Z",
+    "take_profit": "",
+    "stop_loss": "",
+    "tp_trigger_by": "",
+    "sl_trigger_by": ""
+  },
+  "time_now": "1651524341.864290",
+  "rate_limit_status": 99,
+  "rate_limit_reset_ms": 1651524341860,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651527775.493672",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651527775490,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "a8b4742f-1163-4344-b7b9-c75d86eb0566",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 38621,
+    "qty": 27,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 27,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-02T21:42:55.911Z",
+    "updated_at": "2022-05-02T21:42:55.911Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651527775.911774",
+  "rate_limit_status": 89,
+  "rate_limit_reset_ms": 1651527775909,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38621",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 496261477
+      },
+      "last_exec_time": "1651527775.91134",
+      "leaves_qty": 27,
+      "leaves_value": "0.0006991",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T21:42:55.911284555Z",
+      "updated_at": "2022-05-02T21:42:55.918975734Z",
+      "order_id": "a8b4742f-1163-4344-b7b9-c75d86eb0566",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651527778.714720",
+  "rate_limit_status": 598,
+  "rate_limit_reset_ms": 1651527778712,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38621",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 496261477
+      },
+      "last_exec_time": "1651527775.91134",
+      "leaves_qty": 27,
+      "leaves_value": "0.0006991",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T21:42:55.911284555Z",
+      "updated_at": "2022-05-02T21:42:55.918975734Z",
+      "order_id": "a8b4742f-1163-4344-b7b9-c75d86eb0566",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651527781.897426",
+  "rate_limit_status": 597,
+  "rate_limit_reset_ms": 1651527781895,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38621",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 496261477
+      },
+      "last_exec_time": "1651527775.91134",
+      "leaves_qty": 27,
+      "leaves_value": "0.0006991",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T21:42:55.911284555Z",
+      "updated_at": "2022-05-02T21:42:55.918975734Z",
+      "order_id": "a8b4742f-1163-4344-b7b9-c75d86eb0566",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651527785.072716",
+  "rate_limit_status": 596,
+  "rate_limit_reset_ms": 1651527785070,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38621",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 496261477
+      },
+      "last_exec_time": "1651527775.91134",
+      "leaves_qty": 27,
+      "leaves_value": "0.0006991",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T21:42:55.911284555Z",
+      "updated_at": "2022-05-02T21:42:55.918975734Z",
+      "order_id": "a8b4742f-1163-4344-b7b9-c75d86eb0566",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651527788.243670",
+  "rate_limit_status": 595,
+  "rate_limit_reset_ms": 1651527788240,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38621",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 496261477
+      },
+      "last_exec_time": "1651527775.91134",
+      "leaves_qty": 27,
+      "leaves_value": "0.0006991",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T21:42:55.911284555Z",
+      "updated_at": "2022-05-02T21:42:55.918975734Z",
+      "order_id": "a8b4742f-1163-4344-b7b9-c75d86eb0566",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651527791.458565",
+  "rate_limit_status": 594,
+  "rate_limit_reset_ms": 1651527791457,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38621",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 496261477
+      },
+      "last_exec_time": "1651527775.91134",
+      "leaves_qty": 27,
+      "leaves_value": "0.0006991",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T21:42:55.911284555Z",
+      "updated_at": "2022-05-02T21:42:55.918975734Z",
+      "order_id": "a8b4742f-1163-4344-b7b9-c75d86eb0566",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651527794.570465",
+  "rate_limit_status": 593,
+  "rate_limit_reset_ms": 1651527794568,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38621",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 496261477
+      },
+      "last_exec_time": "1651527775.91134",
+      "leaves_qty": 27,
+      "leaves_value": "0.0006991",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T21:42:55.911284555Z",
+      "updated_at": "2022-05-02T21:42:55.918975734Z",
+      "order_id": "a8b4742f-1163-4344-b7b9-c75d86eb0566",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651527797.766071",
+  "rate_limit_status": 592,
+  "rate_limit_reset_ms": 1651527797763,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38621",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 496261477
+      },
+      "last_exec_time": "1651527775.91134",
+      "leaves_qty": 27,
+      "leaves_value": "0.0006991",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T21:42:55.911284555Z",
+      "updated_at": "2022-05-02T21:42:55.918975734Z",
+      "order_id": "a8b4742f-1163-4344-b7b9-c75d86eb0566",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651527800.978518",
+  "rate_limit_status": 591,
+  "rate_limit_reset_ms": 1651527800976,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38621",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 496261477
+      },
+      "last_exec_time": "1651527775.91134",
+      "leaves_qty": 27,
+      "leaves_value": "0.0006991",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T21:42:55.911284555Z",
+      "updated_at": "2022-05-02T21:42:55.918975734Z",
+      "order_id": "a8b4742f-1163-4344-b7b9-c75d86eb0566",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651527805.402873",
+  "rate_limit_status": 590,
+  "rate_limit_reset_ms": 1651527805401,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38621",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 496261477
+      },
+      "last_exec_time": "1651527775.91134",
+      "leaves_qty": 27,
+      "leaves_value": "0.0006991",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T21:42:55.911284555Z",
+      "updated_at": "2022-05-02T21:42:55.918975734Z",
+      "order_id": "a8b4742f-1163-4344-b7b9-c75d86eb0566",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651527808.609389",
+  "rate_limit_status": 589,
+  "rate_limit_reset_ms": 1651527808606,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38621",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 496261477
+      },
+      "last_exec_time": "1651527775.91134",
+      "leaves_qty": 27,
+      "leaves_value": "0.0006991",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T21:42:55.911284555Z",
+      "updated_at": "2022-05-02T21:42:55.918975734Z",
+      "order_id": "a8b4742f-1163-4344-b7b9-c75d86eb0566",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651527811.852859",
+  "rate_limit_status": 588,
+  "rate_limit_reset_ms": 1651527811851,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38621",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 496261477
+      },
+      "last_exec_time": "1651527775.91134",
+      "leaves_qty": 27,
+      "leaves_value": "0.0006991",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T21:42:55.911284555Z",
+      "updated_at": "2022-05-02T21:42:55.918975734Z",
+      "order_id": "a8b4742f-1163-4344-b7b9-c75d86eb0566",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651527815.068154",
+  "rate_limit_status": 587,
+  "rate_limit_reset_ms": 1651527815065,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38621",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 496261477
+      },
+      "last_exec_time": "1651527775.91134",
+      "leaves_qty": 27,
+      "leaves_value": "0.0006991",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T21:42:55.911284555Z",
+      "updated_at": "2022-05-02T21:42:55.918975734Z",
+      "order_id": "a8b4742f-1163-4344-b7b9-c75d86eb0566",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651527818.257989",
+  "rate_limit_status": 586,
+  "rate_limit_reset_ms": 1651527818255,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38621",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 496261477
+      },
+      "last_exec_time": "1651527775.91134",
+      "leaves_qty": 27,
+      "leaves_value": "0.0006991",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T21:42:55.911284555Z",
+      "updated_at": "2022-05-02T21:42:55.918975734Z",
+      "order_id": "a8b4742f-1163-4344-b7b9-c75d86eb0566",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651527821.444053",
+  "rate_limit_status": 585,
+  "rate_limit_reset_ms": 1651527821441,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38621",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 496261477
+      },
+      "last_exec_time": "1651527775.91134",
+      "leaves_qty": 27,
+      "leaves_value": "0.0006991",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T21:42:55.911284555Z",
+      "updated_at": "2022-05-02T21:42:55.918975734Z",
+      "order_id": "a8b4742f-1163-4344-b7b9-c75d86eb0566",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651527824.654020",
+  "rate_limit_status": 584,
+  "rate_limit_reset_ms": 1651527824651,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38621",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 496261477
+      },
+      "last_exec_time": "1651527775.91134",
+      "leaves_qty": 27,
+      "leaves_value": "0.0006991",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T21:42:55.911284555Z",
+      "updated_at": "2022-05-02T21:42:55.918975734Z",
+      "order_id": "a8b4742f-1163-4344-b7b9-c75d86eb0566",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651527827.894991",
+  "rate_limit_status": 583,
+  "rate_limit_reset_ms": 1651527827889,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651527831.026897",
+  "rate_limit_status": 582,
+  "rate_limit_reset_ms": 1651527831024,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "6f38137f-de2b-49b5-b112-c091a1d818ab",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 38604.5,
+    "qty": 27,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 27,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-02T21:43:51.460Z",
+    "updated_at": "2022-05-02T21:43:51.460Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651527831.460593",
+  "rate_limit_status": 89,
+  "rate_limit_reset_ms": 1651527831459,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38604.5",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 496337632
+      },
+      "last_exec_time": "1651527831.460417",
+      "leaves_qty": 27,
+      "leaves_value": "0.0006994",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T21:43:51.46026767Z",
+      "updated_at": "2022-05-02T21:43:51.468784404Z",
+      "order_id": "6f38137f-de2b-49b5-b112-c091a1d818ab",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651527834.249152",
+  "rate_limit_status": 581,
+  "rate_limit_reset_ms": 1651527834247,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38604.5",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 496337632
+      },
+      "last_exec_time": "1651527831.460417",
+      "leaves_qty": 27,
+      "leaves_value": "0.0006994",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T21:43:51.46026767Z",
+      "updated_at": "2022-05-02T21:43:51.468784404Z",
+      "order_id": "6f38137f-de2b-49b5-b112-c091a1d818ab",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651527837.418326",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651527837415,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651527840.621313",
+  "rate_limit_status": 598,
+  "rate_limit_reset_ms": 1651527840618,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651527843.853895",
+  "rate_limit_status": 597,
+  "rate_limit_reset_ms": 1651527843851,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "c3cd4a36-12e4-4bc8-b204-d1f559b28730",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 38606,
+    "qty": 4,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 4,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-02T21:44:04.289Z",
+    "updated_at": "2022-05-02T21:44:04.289Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651527844.290321",
+  "rate_limit_status": 84,
+  "rate_limit_reset_ms": 1651527844287,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38606",
+      "qty": 4,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 496354024
+      },
+      "last_exec_time": "1651527844.289725",
+      "leaves_qty": 4,
+      "leaves_value": "0.00010361",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T21:44:04.289606541Z",
+      "updated_at": "2022-05-02T21:44:04.297844017Z",
+      "order_id": "c3cd4a36-12e4-4bc8-b204-d1f559b28730",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651527847.061756",
+  "rate_limit_status": 596,
+  "rate_limit_reset_ms": 1651527847059,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38606",
+      "qty": 4,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 496354024
+      },
+      "last_exec_time": "1651527844.289725",
+      "leaves_qty": 4,
+      "leaves_value": "0.00010361",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T21:44:04.289606541Z",
+      "updated_at": "2022-05-02T21:44:04.297844017Z",
+      "order_id": "c3cd4a36-12e4-4bc8-b204-d1f559b28730",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651527850.282689",
+  "rate_limit_status": 595,
+  "rate_limit_reset_ms": 1651527850280,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38606",
+      "qty": 4,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 496354024
+      },
+      "last_exec_time": "1651527844.289725",
+      "leaves_qty": 4,
+      "leaves_value": "0.00010361",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T21:44:04.289606541Z",
+      "updated_at": "2022-05-02T21:44:04.297844017Z",
+      "order_id": "c3cd4a36-12e4-4bc8-b204-d1f559b28730",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651527853.473941",
+  "rate_limit_status": 594,
+  "rate_limit_reset_ms": 1651527853471,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38606",
+      "qty": 4,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 496354024
+      },
+      "last_exec_time": "1651527844.289725",
+      "leaves_qty": 4,
+      "leaves_value": "0.00010361",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-02T21:44:04.289606541Z",
+      "updated_at": "2022-05-02T21:44:04.297844017Z",
+      "order_id": "c3cd4a36-12e4-4bc8-b204-d1f559b28730",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651527856.758485",
+  "rate_limit_status": 593,
+  "rate_limit_reset_ms": 1651527856757,
+  "rate_limit": 600
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651528061.871519",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651528061868,
+  "rate_limit": 600
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651528131.349639",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651528131346,
+  "rate_limit": 600
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651544872.301414",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651544872300,
+  "rate_limit": 600
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651544882.959747",
+  "rate_limit_status": 598,
+  "rate_limit_reset_ms": 1651544882958,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651546248.280360",
+  "rate_limit_status": 591,
+  "rate_limit_reset_ms": 1651546248279,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "f5f4bef5-be7c-4903-bd0e-17f7fd6864b5",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 38501,
+    "qty": 27,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 27,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-03T02:50:48.698Z",
+    "updated_at": "2022-05-03T02:50:48.698Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651546248.699166",
+  "rate_limit_status": 92,
+  "rate_limit_reset_ms": 1651546248696,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38501",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 522537772
+      },
+      "last_exec_time": "1651546248.698668",
+      "leaves_qty": 27,
+      "leaves_value": "0.00070128",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-03T02:50:48.698619038Z",
+      "updated_at": "2022-05-03T02:50:48.706504989Z",
+      "order_id": "f5f4bef5-be7c-4903-bd0e-17f7fd6864b5",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651546264.095590",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651546264094,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651547305.318669",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651547305317,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "0e7db56f-1244-4c93-9bdd-7f58f1014b0d",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 38564.5,
+    "qty": 27,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 27,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-03T03:08:25.746Z",
+    "updated_at": "2022-05-03T03:08:25.746Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651547305.747194",
+  "rate_limit_status": 70,
+  "rate_limit_reset_ms": 1651547305744,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651547426.802478",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651547426801,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "162e70bc-54ff-4a32-8b13-e6031346195e",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 38521,
+    "qty": 27,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 27,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-03T03:10:27.244Z",
+    "updated_at": "2022-05-03T03:10:27.244Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651547427.245093",
+  "rate_limit_status": 69,
+  "rate_limit_reset_ms": 1651547427242,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651547430.006721",
+  "rate_limit_status": 598,
+  "rate_limit_reset_ms": 1651547430004,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651547433.214092",
+  "rate_limit_status": 597,
+  "rate_limit_reset_ms": 1651547433212,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "03300003-0a35-4e72-b820-9652cdfc9263",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 38546,
+    "qty": 27,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 27,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-03T03:10:33.638Z",
+    "updated_at": "2022-05-03T03:10:33.638Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651547433.639214",
+  "rate_limit_status": 66,
+  "rate_limit_reset_ms": 1651547433637,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38546",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 524285549
+      },
+      "last_exec_time": "1651547433.639066",
+      "leaves_qty": 27,
+      "leaves_value": "0.00070046",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-03T03:10:33.638930388Z",
+      "updated_at": "2022-05-03T03:10:33.647082456Z",
+      "order_id": "03300003-0a35-4e72-b820-9652cdfc9263",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651547436.431010",
+  "rate_limit_status": 596,
+  "rate_limit_reset_ms": 1651547436429,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38546",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 524285549
+      },
+      "last_exec_time": "1651547433.639066",
+      "leaves_qty": 27,
+      "leaves_value": "0.00070046",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-03T03:10:33.638930388Z",
+      "updated_at": "2022-05-03T03:10:33.647082456Z",
+      "order_id": "03300003-0a35-4e72-b820-9652cdfc9263",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651547439.599297",
+  "rate_limit_status": 595,
+  "rate_limit_reset_ms": 1651547439596,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38546",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 524285549
+      },
+      "last_exec_time": "1651547433.639066",
+      "leaves_qty": 27,
+      "leaves_value": "0.00070046",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-03T03:10:33.638930388Z",
+      "updated_at": "2022-05-03T03:10:33.647082456Z",
+      "order_id": "03300003-0a35-4e72-b820-9652cdfc9263",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651547442.766665",
+  "rate_limit_status": 594,
+  "rate_limit_reset_ms": 1651547442765,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651547445.972162",
+  "rate_limit_status": 593,
+  "rate_limit_reset_ms": 1651547445969,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651547449.179554",
+  "rate_limit_status": 592,
+  "rate_limit_reset_ms": 1651547449176,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "9f19c086-4b92-40ef-b3ec-5195f000fe62",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 38548.5,
+    "qty": 27,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 27,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-03T03:10:49.619Z",
+    "updated_at": "2022-05-03T03:10:49.619Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651547449.619901",
+  "rate_limit_status": 96,
+  "rate_limit_reset_ms": 1651547449616,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38548.5",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 524307939
+      },
+      "last_exec_time": "1651547449.61935",
+      "leaves_qty": 27,
+      "leaves_value": "0.00070041",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-03T03:10:49.619198948Z",
+      "updated_at": "2022-05-03T03:10:49.627083926Z",
+      "order_id": "9f19c086-4b92-40ef-b3ec-5195f000fe62",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651547452.381061",
+  "rate_limit_status": 591,
+  "rate_limit_reset_ms": 1651547452379,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38548.5",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 524307939
+      },
+      "last_exec_time": "1651547449.61935",
+      "leaves_qty": 27,
+      "leaves_value": "0.00070041",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-03T03:10:49.619198948Z",
+      "updated_at": "2022-05-03T03:10:49.627083926Z",
+      "order_id": "9f19c086-4b92-40ef-b3ec-5195f000fe62",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651547455.562060",
+  "rate_limit_status": 590,
+  "rate_limit_reset_ms": 1651547455559,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38548.5",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 524307939
+      },
+      "last_exec_time": "1651547449.61935",
+      "leaves_qty": 27,
+      "leaves_value": "0.00070041",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-03T03:10:49.619198948Z",
+      "updated_at": "2022-05-03T03:10:49.627083926Z",
+      "order_id": "9f19c086-4b92-40ef-b3ec-5195f000fe62",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651547458.758704",
+  "rate_limit_status": 589,
+  "rate_limit_reset_ms": 1651547458757,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38548.5",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 524307939
+      },
+      "last_exec_time": "1651547449.61935",
+      "leaves_qty": 27,
+      "leaves_value": "0.00070041",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-03T03:10:49.619198948Z",
+      "updated_at": "2022-05-03T03:10:49.627083926Z",
+      "order_id": "9f19c086-4b92-40ef-b3ec-5195f000fe62",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651547461.918885",
+  "rate_limit_status": 588,
+  "rate_limit_reset_ms": 1651547461916,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38548.5",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 524307939
+      },
+      "last_exec_time": "1651547449.61935",
+      "leaves_qty": 27,
+      "leaves_value": "0.00070041",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-03T03:10:49.619198948Z",
+      "updated_at": "2022-05-03T03:10:49.627083926Z",
+      "order_id": "9f19c086-4b92-40ef-b3ec-5195f000fe62",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651547465.116609",
+  "rate_limit_status": 587,
+  "rate_limit_reset_ms": 1651547465112,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38548.5",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 524307939
+      },
+      "last_exec_time": "1651547449.61935",
+      "leaves_qty": 27,
+      "leaves_value": "0.00070041",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-03T03:10:49.619198948Z",
+      "updated_at": "2022-05-03T03:10:49.627083926Z",
+      "order_id": "9f19c086-4b92-40ef-b3ec-5195f000fe62",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651547468.322912",
+  "rate_limit_status": 586,
+  "rate_limit_reset_ms": 1651547468320,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38548.5",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 524307939
+      },
+      "last_exec_time": "1651547449.61935",
+      "leaves_qty": 27,
+      "leaves_value": "0.00070041",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-03T03:10:49.619198948Z",
+      "updated_at": "2022-05-03T03:10:49.627083926Z",
+      "order_id": "9f19c086-4b92-40ef-b3ec-5195f000fe62",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651547471.481284",
+  "rate_limit_status": 585,
+  "rate_limit_reset_ms": 1651547471478,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38548.5",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 524307939
+      },
+      "last_exec_time": "1651547449.61935",
+      "leaves_qty": 27,
+      "leaves_value": "0.00070041",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-03T03:10:49.619198948Z",
+      "updated_at": "2022-05-03T03:10:49.627083926Z",
+      "order_id": "9f19c086-4b92-40ef-b3ec-5195f000fe62",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651547474.678067",
+  "rate_limit_status": 584,
+  "rate_limit_reset_ms": 1651547474675,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38548.5",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 524307939
+      },
+      "last_exec_time": "1651547449.61935",
+      "leaves_qty": 27,
+      "leaves_value": "0.00070041",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-03T03:10:49.619198948Z",
+      "updated_at": "2022-05-03T03:10:49.627083926Z",
+      "order_id": "9f19c086-4b92-40ef-b3ec-5195f000fe62",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651547477.914145",
+  "rate_limit_status": 583,
+  "rate_limit_reset_ms": 1651547477911,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38548.5",
+      "qty": 27,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 524307939
+      },
+      "last_exec_time": "1651547449.61935",
+      "leaves_qty": 27,
+      "leaves_value": "0.00070041",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-03T03:10:49.619198948Z",
+      "updated_at": "2022-05-03T03:10:49.627083926Z",
+      "order_id": "9f19c086-4b92-40ef-b3ec-5195f000fe62",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651547481.122734",
+  "rate_limit_status": 582,
+  "rate_limit_reset_ms": 1651547481120,
+  "rate_limit": 600
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651551877.178830",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651551877175,
+  "rate_limit": 600
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651637241.149989",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651637241146,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651651823.114578",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651651823111,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "b165ff62-f3e9-4b58-96d6-f4437369b6fe",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 38818,
+    "qty": 81,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 81,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-04T08:10:23.543Z",
+    "updated_at": "2022-05-04T08:10:23.543Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651651823.544566",
+  "rate_limit_status": 99,
+  "rate_limit_reset_ms": 1651651823540,
+  "rate_limit": 100
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38818",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 679079044
+      },
+      "last_exec_time": "1651651823.544031",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208666",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-04T08:10:23.543866197Z",
+      "updated_at": "2022-05-04T08:10:23.550219491Z",
+      "order_id": "b165ff62-f3e9-4b58-96d6-f4437369b6fe",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651651826.171805",
+  "rate_limit_status": 598,
+  "rate_limit_reset_ms": 1651651826169,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38818",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 679079044
+      },
+      "last_exec_time": "1651651823.544031",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208666",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-04T08:10:23.543866197Z",
+      "updated_at": "2022-05-04T08:10:23.550219491Z",
+      "order_id": "b165ff62-f3e9-4b58-96d6-f4437369b6fe",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651651835.206339",
+  "rate_limit_status": 597,
+  "rate_limit_reset_ms": 1651651835205,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38818",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 679079044
+      },
+      "last_exec_time": "1651651823.544031",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208666",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-04T08:10:23.543866197Z",
+      "updated_at": "2022-05-04T08:10:23.550219491Z",
+      "order_id": "b165ff62-f3e9-4b58-96d6-f4437369b6fe",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651651838.467505",
+  "rate_limit_status": 596,
+  "rate_limit_reset_ms": 1651651838466,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38818",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 679079044
+      },
+      "last_exec_time": "1651651823.544031",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208666",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-04T08:10:23.543866197Z",
+      "updated_at": "2022-05-04T08:10:23.550219491Z",
+      "order_id": "b165ff62-f3e9-4b58-96d6-f4437369b6fe",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651651841.479379",
+  "rate_limit_status": 595,
+  "rate_limit_reset_ms": 1651651841476,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38818",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 679079044
+      },
+      "last_exec_time": "1651651823.544031",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208666",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-04T08:10:23.543866197Z",
+      "updated_at": "2022-05-04T08:10:23.550219491Z",
+      "order_id": "b165ff62-f3e9-4b58-96d6-f4437369b6fe",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651651844.506306",
+  "rate_limit_status": 594,
+  "rate_limit_reset_ms": 1651651844504,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38818",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 679079044
+      },
+      "last_exec_time": "1651651823.544031",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208666",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-04T08:10:23.543866197Z",
+      "updated_at": "2022-05-04T08:10:23.550219491Z",
+      "order_id": "b165ff62-f3e9-4b58-96d6-f4437369b6fe",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651651847.550506",
+  "rate_limit_status": 593,
+  "rate_limit_reset_ms": 1651651847547,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38818",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 679079044
+      },
+      "last_exec_time": "1651651823.544031",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208666",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-04T08:10:23.543866197Z",
+      "updated_at": "2022-05-04T08:10:23.550219491Z",
+      "order_id": "b165ff62-f3e9-4b58-96d6-f4437369b6fe",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651651850.589981",
+  "rate_limit_status": 592,
+  "rate_limit_reset_ms": 1651651850586,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38818",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 679079044
+      },
+      "last_exec_time": "1651651823.544031",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208666",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-04T08:10:23.543866197Z",
+      "updated_at": "2022-05-04T08:10:23.550219491Z",
+      "order_id": "b165ff62-f3e9-4b58-96d6-f4437369b6fe",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651651853.608884",
+  "rate_limit_status": 591,
+  "rate_limit_reset_ms": 1651651853606,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38818",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 679079044
+      },
+      "last_exec_time": "1651651823.544031",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208666",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-04T08:10:23.543866197Z",
+      "updated_at": "2022-05-04T08:10:23.550219491Z",
+      "order_id": "b165ff62-f3e9-4b58-96d6-f4437369b6fe",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651651856.873727",
+  "rate_limit_status": 590,
+  "rate_limit_reset_ms": 1651651856870,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38818",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 679079044
+      },
+      "last_exec_time": "1651651823.544031",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208666",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-04T08:10:23.543866197Z",
+      "updated_at": "2022-05-04T08:10:23.550219491Z",
+      "order_id": "b165ff62-f3e9-4b58-96d6-f4437369b6fe",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651651859.652234",
+  "rate_limit_status": 589,
+  "rate_limit_reset_ms": 1651651859649,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Sell",
+      "order_type": "Limit",
+      "price": "38818",
+      "qty": 81,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 679079044
+      },
+      "last_exec_time": "1651651823.544031",
+      "leaves_qty": 81,
+      "leaves_value": "0.00208666",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-04T08:10:23.543866197Z",
+      "updated_at": "2022-05-04T08:10:23.550219491Z",
+      "order_id": "b165ff62-f3e9-4b58-96d6-f4437369b6fe",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651651862.687269",
+  "rate_limit_status": 588,
+  "rate_limit_reset_ms": 1651651862684,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651651865.725100",
+  "rate_limit_status": 587,
+  "rate_limit_reset_ms": 1651651865724,
+  "rate_limit": 600
+}}] 
+[closePosition/queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651651868.801383",
+  "rate_limit_status": 586,
+  "rate_limit_reset_ms": 1651651868800,
+  "rate_limit": 600
+}}] 
+[closePosition] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "22561c38-4b4a-4b6c-9044-6d1184d0a9a5",
+    "symbol": "BTCUSD",
+    "side": "Sell",
+    "order_type": "Limit",
+    "price": 38820.5,
+    "qty": 81,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "Created",
+    "last_exec_time": 0,
+    "last_exec_price": 0,
+    "leaves_qty": 81,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-04T08:11:09.216Z",
+    "updated_at": "2022-05-04T08:11:09.216Z",
+    "take_profit": "0.00",
+    "stop_loss": "0.00",
+    "tp_trigger_by": "UNKNOWN",
+    "sl_trigger_by": "UNKNOWN"
+  },
+  "time_now": "1651651869.216654",
+  "rate_limit_status": 98,
+  "rate_limit_reset_ms": 1651651869214,
+  "rate_limit": 100
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Buy",
+      "order_type": "Limit",
+      "price": "38000",
+      "qty": 10,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 713378870
+      },
+      "last_exec_time": "1651672654.999849",
+      "leaves_qty": 10,
+      "leaves_value": "0.00026315",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-04T13:57:34.99977411Z",
+      "updated_at": "2022-05-04T13:57:35.007712281Z",
+      "order_id": "bc1a3cd5-fb42-4a6e-8729-b60fb46ef7f1",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    },
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Buy",
+      "order_type": "Limit",
+      "price": "38200",
+      "qty": 3,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 713347599
+      },
+      "last_exec_time": "1651672640.612645",
+      "leaves_qty": 3,
+      "leaves_value": "0.00007853",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-04T13:57:20.612576782Z",
+      "updated_at": "2022-05-04T13:57:20.620005169Z",
+      "order_id": "1dfb0501-fdac-4d8c-aa5f-9581d2d27cfc",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    },
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Buy",
+      "order_type": "Limit",
+      "price": "38300",
+      "qty": 2,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 713334330
+      },
+      "last_exec_time": "1651672632.499288",
+      "leaves_qty": 2,
+      "leaves_value": "0.00005221",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-04T13:57:12.499134846Z",
+      "updated_at": "2022-05-04T13:57:12.505711029Z",
+      "order_id": "c46a2f3c-e5ee-4c4d-b0b8-abdcfc6aabf8",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    },
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Buy",
+      "order_type": "Limit",
+      "price": "38450",
+      "qty": 1,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 713314531
+      },
+      "last_exec_time": "1651672621.221416",
+      "leaves_qty": 1,
+      "leaves_value": "0.000026",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-04T13:57:01.221360717Z",
+      "updated_at": "2022-05-04T13:57:01.228626272Z",
+      "order_id": "790c8ebc-fd27-4290-a770-196b48e9f129",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    },
+    {
+      "user_id": 593755,
+      "position_idx": 0,
+      "symbol": "BTCUSD",
+      "side": "Buy",
+      "order_type": "Limit",
+      "price": "38550",
+      "qty": 1,
+      "time_in_force": "GoodTillCancel",
+      "order_status": "New",
+      "ext_fields": {
+        "o_req_num": 713284874
+      },
+      "last_exec_time": "1651672606.884626",
+      "leaves_qty": 1,
+      "leaves_value": "0.00002594",
+      "cum_exec_qty": 0,
+      "cum_exec_value": null,
+      "cum_exec_fee": null,
+      "reject_reason": "EC_NoError",
+      "cancel_type": "UNKNOWN",
+      "order_link_id": "",
+      "created_at": "2022-05-04T13:56:46.884511873Z",
+      "updated_at": "2022-05-04T13:56:46.891745688Z",
+      "order_id": "57101162-2a03-442a-9ac3-5db9fd61396f",
+      "take_profit": "0.00",
+      "stop_loss": "0.00",
+      "tp_trigger_by": "UNKNOWN",
+      "sl_trigger_by": "UNKNOWN"
+    }
+  ],
+  "time_now": "1651677283.603343",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651677283599,
+  "rate_limit": 600
+}}] 
+[closeOrderByID] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "1dfb0501-fdac-4d8c-aa5f-9581d2d27cfc",
+    "symbol": "BTCUSD",
+    "side": "Buy",
+    "order_type": "Limit",
+    "price": 38200,
+    "qty": 3,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "New",
+    "last_exec_time": 1651672640.6126451,
+    "last_exec_price": 0,
+    "leaves_qty": 3,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-04T13:57:20.612Z",
+    "updated_at": "2022-05-04T15:14:44.023Z",
+    "take_profit": "",
+    "stop_loss": "",
+    "tp_trigger_by": "",
+    "sl_trigger_by": ""
+  },
+  "time_now": "1651677284.023835",
+  "rate_limit_status": 93,
+  "rate_limit_reset_ms": 1651677284021,
+  "rate_limit": 100
+}}] 
+[closeOrderByID] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "790c8ebc-fd27-4290-a770-196b48e9f129",
+    "symbol": "BTCUSD",
+    "side": "Buy",
+    "order_type": "Limit",
+    "price": 38450,
+    "qty": 1,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "New",
+    "last_exec_time": 1651672621.221416,
+    "last_exec_price": 0,
+    "leaves_qty": 1,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-04T13:57:01.221Z",
+    "updated_at": "2022-05-04T15:14:44.02Z",
+    "take_profit": "",
+    "stop_loss": "",
+    "tp_trigger_by": "",
+    "sl_trigger_by": ""
+  },
+  "time_now": "1651677284.020600",
+  "rate_limit_status": 94,
+  "rate_limit_reset_ms": 1651677284018,
+  "rate_limit": 100
+}}] 
+[closeOrderByID] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "57101162-2a03-442a-9ac3-5db9fd61396f",
+    "symbol": "BTCUSD",
+    "side": "Buy",
+    "order_type": "Limit",
+    "price": 38550,
+    "qty": 1,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "New",
+    "last_exec_time": 1651672606.884626,
+    "last_exec_price": 0,
+    "leaves_qty": 1,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-04T13:56:46.884Z",
+    "updated_at": "2022-05-04T15:14:44.02Z",
+    "take_profit": "",
+    "stop_loss": "",
+    "tp_trigger_by": "",
+    "sl_trigger_by": ""
+  },
+  "time_now": "1651677284.020611",
+  "rate_limit_status": 95,
+  "rate_limit_reset_ms": 1651677284018,
+  "rate_limit": 100
+}}] 
+[closeOrderByID] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "c46a2f3c-e5ee-4c4d-b0b8-abdcfc6aabf8",
+    "symbol": "BTCUSD",
+    "side": "Buy",
+    "order_type": "Limit",
+    "price": 38300,
+    "qty": 2,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "New",
+    "last_exec_time": 1651672632.499288,
+    "last_exec_price": 0,
+    "leaves_qty": 2,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-04T13:57:12.499Z",
+    "updated_at": "2022-05-04T15:14:44.708Z",
+    "take_profit": "",
+    "stop_loss": "",
+    "tp_trigger_by": "",
+    "sl_trigger_by": ""
+  },
+  "time_now": "1651677284.708859",
+  "rate_limit_status": 92,
+  "rate_limit_reset_ms": 1651677284706,
+  "rate_limit": 100
+}}] 
+[closeOrderByID] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": {
+    "user_id": 593755,
+    "order_id": "bc1a3cd5-fb42-4a6e-8729-b60fb46ef7f1",
+    "symbol": "BTCUSD",
+    "side": "Buy",
+    "order_type": "Limit",
+    "price": 38000,
+    "qty": 10,
+    "time_in_force": "GoodTillCancel",
+    "order_status": "New",
+    "last_exec_time": 1651672654.9998488,
+    "last_exec_price": 0,
+    "leaves_qty": 10,
+    "cum_exec_qty": 0,
+    "cum_exec_value": 0,
+    "cum_exec_fee": 0,
+    "reject_reason": "EC_NoError",
+    "order_link_id": "",
+    "created_at": "2022-05-04T13:57:34.999Z",
+    "updated_at": "2022-05-04T15:14:44.754Z",
+    "take_profit": "",
+    "stop_loss": "",
+    "tp_trigger_by": "",
+    "sl_trigger_by": ""
+  },
+  "time_now": "1651677284.755402",
+  "rate_limit_status": 91,
+  "rate_limit_reset_ms": 1651677284752,
+  "rate_limit": 100
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651686833.232457",
+  "rate_limit_status": 593,
+  "rate_limit_reset_ms": 1651686833229,
+  "rate_limit": 600
+}}] 

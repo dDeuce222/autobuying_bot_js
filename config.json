@@ -1,5 +1,5 @@
 {
-    "mainLoopDelay": 2333,
+    "mainLoopDelay": 2187,
     "priceDiffMark_1": 1000,
     "priceDiffMark_2": 2000,
     "priceDiffMark_3": 3000,
@@ -19,21 +19,19 @@
     "autoManageOrderPrice": true,
     "lowPriceGoodToBuy1": 35999,
 
+    "maxOwnContracts": 243,
+    "maxOwnContracts_options2": "3, 9, 27, 81, 243, 729, 2187, 6561, 19683",
+    "qtdContractsToBuy": 1,
+    "autoMinPriceDistance": 81,
     "autoMinPriceDistance_info": "// 5 minimo hardcode",
-    "autoMinPriceDistance_options": "3, 6, 9, 27, 33, 54, 66, 81, 99, 132, 164, 198, 243, 333, 396, 486, 576, 666, 729, 882, 999, 1332, 2187, 4374, 6666",
-    "autoMinPriceDistance_options2": "3, 9, 27, 81, 243, 729, 2187, 6561, 19683",
-
-    "maxOwnContracts": 1332,
-    "qtdContractsToBuy": 9,
-    "autoMinPriceDistance": 576,
-    "considerClosingPositionPriceDistance": 133,
-    "qtdContractsToClosePosition": 27,
-    "minOwnedContractsToStartClosingPosition": 27,
+    "autoMinPriceDistance_options": "3, 6, 9, 27, 33, 54, 66, 81, 99, 132, 164, 198, 243, 333, 396, 486, 576, 666, 729, 882, 999, 1332, 2187, 4374, 6561",
+    "considerClosingPositionPriceDistance": 729,
+    "qtdContractsToClosePosition": 81,
+    "minOwnedContractsToStartClosingPosition": 81,
     "ancientOrderMinutes": 0.9,
     "ancientClosePositionOrderMinutes": 0.9,
     "offerOffsetDown": 3,
     "autoOfferOffsetDown": 3,
-
 
     "liquidationDistAlert": 333,
     "liquidationQtdOffer": 9,
