@@ -75621,3 +75621,27 @@
   "rate_limit_reset_ms": 1651686833229,
   "rate_limit": 600
 }}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651689057.084809",
+  "rate_limit_status": 599,
+  "rate_limit_reset_ms": 1651689057081,
+  "rate_limit": 600
+}}] 
+[queryActiveOrder] 
+{
+  "ret_code": 0,
+  "ret_msg": "OK",
+  "ext_code": "",
+  "ext_info": "",
+  "result": [],
+  "time_now": "1651689071.602109",
+  "rate_limit_status": 598,
+  "rate_limit_reset_ms": 1651689071599,
+  "rate_limit": 600
+}}] 

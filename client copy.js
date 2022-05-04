@@ -531,7 +531,7 @@ async function mainLoop() {
 
             startingLongPosition = true
 
-            client.placeActiveOrder({ order_type: 'Limit', side: 'Buy', symbol: 'BTCUSD', qty: 1, price: lastPrice, time_in_force: 'GoodTillCancel' })
+            client.placeActiveOrder({ order_type: 'Market', side: 'Buy', symbol: 'BTCUSD', qty: 1, price: lastPrice, time_in_force: 'GoodTillCancel' })
                 .then(response => {
                     debugFile(response, 'placeActiveOrder')
                         //console.log("RESPONSE: ", response)
@@ -556,11 +556,13 @@ async function mainLoop() {
 
         return new Promise(resolve => {
 
-            if (isLongActive)
-                pdist = Number(lastPrice - entryPrice).toFixed(2)
-            else
-                pdist = Number(entryPrice - lastPrice).toFixed(2)
+            if (ownedContracts != 0) {
+                if (isLongActive)
+                    pdist = Number(lastPrice - entryPrice).toFixed(2)
+                else
+                    pdist = Number(entryPrice - lastPrice).toFixed(2)
 
+            }
 
             if (Number(pdist) >= Number(pdistMax)) pdistMax = pdist
             if (Number(pdist) <= Number(pdistMin)) pdistMin = pdist

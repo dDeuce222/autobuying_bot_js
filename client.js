@@ -10,8 +10,8 @@ DefaultLogger.silly = () => {};
 
 const utils = require('./utils.js')
 
-const API_KEY = ''
-const PRIVATE_KEY = ''
+const API_KEY = 'nsBkKTVYXRkOlnN2CT'
+const PRIVATE_KEY = 'dKBpI9hH148HM4r3rk66goKfEsbfRBo5b4GS'
 const useLivenet = true
 
 const client = new InverseClient(
