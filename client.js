@@ -101,9 +101,12 @@ let lastCloseShortOrderId = ''
 let startingLongPosition = false
 let unrealizedPNL = 0
 let initialSellOrderPlaced = false
+let initialBuyOrderPlaced = false
 let lowestPrice = 1000000
 let lastInitialSellOrderCreatedAt = null
+let lastInitialBuyOrderCreatedAt = null
 let lastInitialSellOrderId = 0
+let lastInitialBuyOrderId = 0
 let maxContractsToAfford = 0
 let botPaused = false
 let b1 = 0
@@ -224,6 +227,13 @@ async function mainLoop() {
                     lastInitialSellOrderCreatedAt = null
                     initialSellOrderPlaced = false
                 }
+
+                if (lastInitialBuyOrderId == data.data[0].order_id) {
+                    lastInitialBuyOrderId = null
+                    lastInitialBuyOrderCreatedAt = null
+                    initialBuyOrderPlaced = false
+                }
+
 
                 //if (data.data[0].order_id = lastCloseShortOrderId) shortExitRunning = false
                 let dtnow = new Date()
@@ -638,6 +648,36 @@ async function mainLoop() {
 
     }
 
+    async function placeInitialBuyOrder() {
+
+        let price = Number(entryPrice) - Number(autoMinPriceDistance)
+
+        return new Promise(resolve => {
+            bybitApiCalls++
+            client.placeActiveOrder({ order_type: 'Limit', side: 'Buy', symbol: 'BTCUSD', qty: 1, price: price.toFixed(2), time_in_force: 'GoodTillCancel' })
+                .then(response => {
+                    debugFile(response, 'placeInitialBuyOrder')
+                        //console.log("RESPONSE: ", response)
+                        //lastOrderPrice = response.result.price
+                    lastInitialBuyOrderId = response.result.order_id
+                    lastInitialBuyOrderCreatedAt = response.result.created_at
+                        //lastOrderQty = response.result.qty
+                        //lastOfferDate = new Date()
+                    initialBuyOrderPlaced = true
+                    resolve('')
+                })
+                .catch(err => {
+                    debugFile(err, 'placeInitialBuyOrder')
+                    console.error("placeInitialBuyOrder error: ", err)
+                    resolve('')
+                });
+
+        });
+
+    }
+
+
+
     async function calculations() {
 
         return new Promise(resolve => {
@@ -761,6 +801,16 @@ async function mainLoop() {
                         placeInitialSellOrder()
                     }
                 }
+
+                if (lastInitialBuyOrderCreatedAt != null) { // check initial sell orders
+                    let dtlcp = new Date(lastInitialBuyOrderCreatedAt)
+                    let timePassedOfInitialBuyActiveOrder = new Date().getTime() - dtlcp.getTime()
+                    if (timePassedOfInitialBuyActiveOrder > (ancientOrderMinutes * 1000 * 60)) {
+                        closeOrderByID(lastInitialBuyOrderId)
+                        placeInitialBuyOrder()
+                    }
+                }
+
 
             }
 
@@ -975,6 +1025,9 @@ async function mainLoop() {
             await closePosition()
         } else if (ownedContracts > 0 && isLongActive & !initialSellOrderPlaced) {
             await placeInitialSellOrder() // coloca uma oferta de venda pra deixar marcado no grafico
+        } else if (ownedContracts > 0 && isLongActive & !initialBuyOrderPlaced) {
+            await placeInitialBuyOrder() // coloca uma oferta de compra pra deixar marcado no grafico
+
         } else if (command.search("GBuy") == 0 || command.search("Auto") == 0) {
             process.stdout.write(command.white.bgBlack)
             process.stdout.write("_ ".grey.bgBlack)
