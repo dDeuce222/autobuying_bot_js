@@ -23,9 +23,6 @@ const client = new InverseClient(
 // config.js
 let runningCycles = 1
 let minCyclesExperience = 0
-let priceDiffMark_1 = 0
-let priceDiffMark_2 = 0
-let priceDiffMark_3 = 0
 let lowPriceGoodToBuy1 = 0
 let liqBarsThreshold = 0
 let mainLoopDelay = 0
@@ -49,6 +46,8 @@ let liquidationQtdOffer = 10
 let minOwnedContractsToStartClosingPosition = 0
 let ancientClosePositionOrderMinutes = 0
 let enableSounds = true
+let enableOnlyLowestPrice = false
+let autoBuySetValueAndQty = false
 
 // response vars
 let lastPrice = 0
@@ -100,6 +99,17 @@ let lastClosePositionOrderDate = new Date()
 let shortExitRunning = false
 let lastCloseShortOrderId = ''
 let startingLongPosition = false
+let unrealizedPNL = 0
+let initialSellOrderPlaced = false
+let lowestPrice = 1000000
+let lastInitialSellOrderCreatedAt = null
+let lastInitialSellOrderId = 0
+let maxContractsToAfford = 0
+let botPaused = false
+let b1 = 0
+let b2 = 0
+let b3 = 0
+let b4 = 0
 
 const wsConfig = {
     key: API_KEY,
@@ -132,17 +142,30 @@ if (process.stdin.isTTY)
     process.stdin.setRawMode(true);
 
 process.stdin.on('keypress', (chunk, key) => {
+
+    //console.log('key pressed : ' + JSON.stringify(key))
+
     if (key && key.name == 'h')
         keyPressed_H = true
 
-    if (key && key.name == 'm')
+    if (key && key.name == '1')
         sound.play("D:\\workspace\\bybit\\abbot\\buybit-machine\\Connected.mp3", 0.2)
+
+    if (key && key.name == '2')
+        sound.play("D:\\workspace\\bybit\\abbot\\buybit-machine\\ThereIsAWay.mp3", 0.1)
+
 
     if (key && key.name == 's')
         enableSounds ? enableSounds = false : enableSounds = true
 
     if (key && key.name == 'q')
         process.exit()
+
+    if (key && key.name == 'p')
+        botPaused ? botPaused = false : botPaused = true
+
+
+
 
 });
 
@@ -152,47 +175,75 @@ async function mainLoop() {
 
     ws.on('update', async data => {
 
-        console.log('[ '.brightCyan.bgBlack +
-            'ORDER '.brightYellow.bgBlack +
-            data.data[0].side.brightYellow.bgBlack +
-            ' ] '.brightCyan.bgBlack +
-            data.data[0].order_status.toString().brightYellow.bgBlack +
-            ' ->'.brightYellow.bgBlack +
+        console.log()
+        process.stdout.write('|'.brightMagenta.bgBlack + 'ORDER '.brightYellow.bgBlack)
+        if (data.data[0].side == 'Buy')
+            process.stdout.write(data.data[0].side.brightWhite.bgGreen)
+        else
+            process.stdout.write(data.data[0].side.brightWhite.bgRed)
+
+        process.stdout.write(' '.bgBlack)
+
+        if (data.data[0].order_status == 'New')
+            process.stdout.write(data.data[0].order_status.toString().brightYellow.bgBlack)
+        else if (data.data[0].order_status == 'Filled')
+            process.stdout.write(data.data[0].order_status.toString().yellow.bgBlack)
+        else
+            process.stdout.write(data.data[0].order_status.toString().white.bgGray)
+
+
+        process.stdout.write(' ->'.brightYellow.bgBlack +
             '> '.yellow.bgBlack +
             data.data[0].qty.toString().brightWhite.bgBlack +
             'x'.white.bgBlack +
             '@'.yellow.bgBlack +
             data.data[0].price.toString().brightYellow.bgBlack + ' ' +
-            data.data[0].order_id.toString().cyan.bgBlack + ' ' +
-            new Date().toString().substring(16).yellow.bgBlack)
+            data.data[0].order_id.toString().grey.bgBlack + ' ' +
+            new Date().toString().substring(16).replace('GMT-0300 (Brasilia Standard Time)', '').yellow.bgBlack)
 
 
         if (data.data[0].order_status == 'Filled' || data.data[0].order_status == 'Cancelled') {
 
-            lastOrderPrice = 0
-            lastOfferDate = new Date()
-            activeOrderExists = false
-            if (data.data[0].order_status == 'Filled' && enableSounds) {
-                sound.play("D:\\workspace\\bybit\\abbot\\buybit-machine\\money-soundfx.mp3", 0.06)
+
+            if (data.data[0].order_status == 'Filled') {
+
+                if (enableSounds) sound.play("D:\\workspace\\bybit\\abbot\\buybit-machine\\money-soundfx.mp3", 0.06)
+
+                if (data.data[0].side == 'Buy') {
+                    startingLongPosition = false
+                    lastOrderPrice = 0
+                }
+
                 lastClosePositionOrderDate = new Date()
 
-                if (data.data[0].side == 'Buy') startingLongPosition = false
+                lastOfferDate = new Date()
+                if (data.data[0].price < lowestPrice) lowestPrice = data.data[0].price
+
+                if (lastInitialSellOrderId == data.data[0].order_id) {
+                    lastInitialSellOrderId = null
+                    lastInitialSellOrderCreatedAt = null
+                    initialSellOrderPlaced = false
+                }
+
+                //if (data.data[0].order_id = lastCloseShortOrderId) shortExitRunning = false
+                let dtnow = new Date()
+
+                let logOutput = dtnow.toString().replace('GMT-0300 (Brasilia Standard Time)', '')
+                logOutput = logOutput + "owned:" + ownedContracts + " "
+                logOutput = logOutput + "entryPrice:" + Number(entryPrice).toFixed(2) + " "
+                logOutput = logOutput + "liqPrice:" + Number(liqPrice).toFixed(2) + " "
+                logOutput = logOutput + "price:" + Number(lastPrice).toFixed(2) + " "
+                logOutput = logOutput + "PLNonRealized:" + Number(PLNonRealized).toFixed(2) + " \n"
+
+                fs.appendFile('bybit.log', logOutput, (err) => {
+                    if (err) throw err;
+                    //console.log('Log file updated!');
+                });
+
 
             }
-            //if (data.data[0].order_id = lastCloseShortOrderId) shortExitRunning = false
-            let dtnow = new Date()
 
-            let logOutput = dtnow.toString().replace('GMT-0300 (Brasilia Standard Time)', '')
-            logOutput = logOutput + "owned:" + ownedContracts + " "
-            logOutput = logOutput + "entryPrice:" + Number(entryPrice).toFixed(2) + " "
-            logOutput = logOutput + "liqPrice:" + Number(liqPrice).toFixed(2) + " "
-            logOutput = logOutput + "price:" + Number(lastPrice).toFixed(2)
-            logOutput = logOutput + "PLNonRealized:" + Number(PLNonRealized).toFixed(2) + " \n"
-
-            fs.appendFile('bybit.log', logOutput, (err) => {
-                if (err) throw err;
-                //console.log('Log file updated!');
-            });
+            activeOrderExists = false
 
         } else if (data.data[0].order_status == 'New') {
             skipLineFeedThisRound = true
@@ -224,12 +275,15 @@ async function mainLoop() {
 
     while (true) {
 
-        await loadConfigs()
-        await getTickers()
-        await getPosition()
-        await calculations()
-        printLog()
-
+        if (!botPaused) {
+            await loadConfigs()
+            await getTickers()
+            await getPosition()
+            await calculations()
+            printLog()
+        } else {
+            console.log('bot paused.')
+        }
         await new Promise(resolve => setTimeout(resolve, mainLoopDelay))
         runningCycles++
         lastLastPrice = lastPrice
@@ -241,9 +295,6 @@ async function mainLoop() {
             fs.readFile('./config.json', 'utf8', function(err, data) {
                 if (err) throw err; // we'll not consider error handling for now
                 var obj = JSON.parse(data)
-                priceDiffMark_1 = obj.priceDiffMark_1
-                priceDiffMark_2 = obj.priceDiffMark_2
-                priceDiffMark_3 = obj.priceDiffMark_3
                 lowPriceGoodToBuy1 = obj.lowPriceGoodToBuy1
                 liqBarsThreshold = obj.liqBarsThreshold
                 if (mainLoopDelay != obj.mainLoopDelay) {
@@ -262,7 +313,7 @@ async function mainLoop() {
                 minPriceDistanceOrder = obj.minPriceDistanceOrder
                 excludeFromDebugLog = obj.excludeFromDebugLog
                 autoManageOrderPrice = obj.autoManageOrderPrice
-                if (autoMinPriceDistance != obj.autoMinPriceDistance)
+                if (autoMinPriceDistance != obj.autoMinPriceDistance && !autoBuySetValueAndQty)
                     showheader = true
                 autoMinPriceDistance = obj.autoMinPriceDistance
                 autoOfferOffsetDown = obj.autoOfferOffsetDown
@@ -274,6 +325,8 @@ async function mainLoop() {
                 minOwnedContractsToStartClosingPosition = obj.minOwnedContractsToStartClosingPosition
                 ancientClosePositionOrderMinutes = obj.ancientClosePositionOrderMinutes
                 enableSounds = obj.enableSounds
+                enableOnlyLowestPrice = obj.enableOnlyLowestPrice
+                autoBuySetValueAndQty = obj.autoBuySetValueAndQty
                 resolve('')
             });
         });
@@ -376,10 +429,10 @@ async function mainLoop() {
                         process.stdout.write(`${lastOrderPrice.toFixed(2)}`.brightWhite.bgBlack)
                         process.stdout.write(`x`.grey.bgBlack)
                         process.stdout.write(`${lastOrderQty}`.white.bgBlack)
-                        console.log()
+                            //console.log()
                         skipLineFeedThisRound = true
 
-                    } else if ((Math.abs(Number(pdist)) < Number(minPriceDistanceOrder)) && pdist != lastPrice && !autoManageOrderPrice) {
+                    } else if ((Math.abs(Number(pdist)) < Number(minPriceDistanceOrder)) && pdist != lastPrice && !autoManageOrderPrice && !autoBuySetValueAndQty) {
 
                         process.stdout.write(`Min pdist: ${minPriceDistanceOrder}`.yellow.bgBlack)
 
@@ -388,6 +441,9 @@ async function mainLoop() {
                         console.log()
 
                     } else { // cria ordem long
+
+
+
 
                         bybitApiCalls++
                         if (enableSounds) sound.play("D:\\workspace\\bybit\\abbot\\buybit-machine\\tick.mp3", 0.3)
@@ -513,8 +569,8 @@ async function mainLoop() {
             bybitApiCalls++
             client.cancelActiveOrder({ symbol: 'BTCUSD', order_id: orderId })
                 .then(response => {
-                    debugFile(response, 'closeOrderByID')
-                        //console.log("RESPONSE removeOrderById : ", response)
+                    //debugFile(response, 'closeOrderByID')
+                    //console.log("RESPONSE removeOrderById : ", response)
                     resolve('')
                 })
                 .catch(err => {
@@ -527,10 +583,11 @@ async function mainLoop() {
     }
 
     async function startLongPosition() {
+
         return new Promise(resolve => {
 
             startingLongPosition = true
-
+            bybitApiCalls++
             client.placeActiveOrder({ order_type: 'Market', side: 'Buy', symbol: 'BTCUSD', qty: 1, price: lastPrice, time_in_force: 'GoodTillCancel' })
                 .then(response => {
                     debugFile(response, 'placeActiveOrder')
@@ -540,6 +597,7 @@ async function mainLoop() {
                     lastOrderCreatedAt = response.result.created_at
                     lastOrderQty = response.result.qty
                     lastOfferDate = new Date()
+                    lowestPrice = 1000000
                     resolve('')
                 })
                 .catch(err => {
@@ -552,11 +610,40 @@ async function mainLoop() {
 
     }
 
+    async function placeInitialSellOrder() {
+
+        let price = Number(entryPrice) + Number(considerClosingPositionPriceDistance)
+
+        return new Promise(resolve => {
+            bybitApiCalls++
+            client.placeActiveOrder({ order_type: 'Limit', side: 'Sell', symbol: 'BTCUSD', qty: 1, price: price.toFixed(2), time_in_force: 'GoodTillCancel' })
+                .then(response => {
+                    debugFile(response, 'placeInitialSellOrder')
+                        //console.log("RESPONSE: ", response)
+                        //lastOrderPrice = response.result.price
+                    lastInitialSellOrderId = response.result.order_id
+                    lastInitialSellOrderCreatedAt = response.result.created_at
+                        //lastOrderQty = response.result.qty
+                        //lastOfferDate = new Date()
+                    initialSellOrderPlaced = true
+                    resolve('')
+                })
+                .catch(err => {
+                    debugFile(err, 'placeInitialSellOrder')
+                    console.error("placeInitialSellOrder error: ", err)
+                    resolve('')
+                });
+
+        });
+
+    }
+
     async function calculations() {
 
         return new Promise(resolve => {
 
             if (ownedContracts != 0) {
+
                 if (isLongActive)
                     pdist = Number(lastPrice - entryPrice).toFixed(2)
                 else
@@ -571,11 +658,41 @@ async function mainLoop() {
 
             let lastCommand = command;
 
+            if (autoBuySetValueAndQty) {
+
+                let valorporcontrato = positionMargin / ownedContracts
+                maxContractsToAfford = walletBalance / valorporcontrato
+                maxContractsToAfford = maxContractsToAfford - ((maxContractsToAfford / 100) * 1.1) //margem pra baixo, pra cobrir taxas, erro, etc
+
+                b1 = Number((maxContractsToAfford / 100) * 3).toFixed(0)
+                b2 = Number((maxContractsToAfford / 100) * 9).toFixed(0)
+                b3 = Number((maxContractsToAfford / 100) * 27).toFixed(0)
+                b4 = Number((maxContractsToAfford / 100) * 54).toFixed(0)
+
+                if (ownedContracts > b4) { // > 81%
+                    autoMinPriceDistance = 2187
+                    qtdContractsToBuy = 27
+                } else if (ownedContracts > b3) { // > 27%
+                    autoMinPriceDistance = 729
+                    qtdContractsToBuy = 9
+                } else if (ownedContracts > b2) { // > 9%
+                    autoMinPriceDistance = 243
+                    qtdContractsToBuy = 3
+                } else if (ownedContracts > b1) { // > 3%
+                    autoMinPriceDistance = 81
+                    qtdContractsToBuy = 3
+                } else { // < 3%
+                    autoMinPriceDistance = 27
+                    qtdContractsToBuy = 1
+                }
+            }
+
+
             //prevent liquidation
             if (ldist > 0 && ldist < liquidationDistAlert) {
                 command = 'Avoiding Liquidation!'
 
-            } else if (pdist > considerClosingPositionPriceDistance) { // TODO is not working
+            } else if (pdist > considerClosingPositionPriceDistance) {
 
                 command = 'take profit!'
 
@@ -584,22 +701,19 @@ async function mainLoop() {
 
                 if (lastPrice > entryPrice) // quando o valor ainda é maior que o valor da posicao
                 //command = 'Seeking'.yellow.bgBlack + '@'.brightYellow.bgBlack + Number(lowPriceGoodToBuy1).toFixed(2).toString().yellow.bgBlack
-                    command = 'Reading market data...'.yellow.bgBlack
-
-                if ((Math.abs((entryPrice - lastPrice))) > priceDiffMark_1) // quando atinge a diferenca desejada para comprar mais Mark_1
-                    command = 'Mark #1';
-
-                if ((Math.abs((entryPrice - lastPrice))) > priceDiffMark_2)
-                    command = 'Mark #2';
-
-                if ((Math.abs((entryPrice - lastPrice))) > priceDiffMark_3)
-                    command = 'Mark #3';
+                    command = 'Processing market data...'.yellow.bgBlack
 
                 if (autoManageOrderPrice) {
                     // Verifica se o momento atual é oportuno para criar oferta
                     if (pdist < 0 && Math.abs(pdist) >= autoMinPriceDistance) {
                         command = `Auto`;
                     }
+                } else if (autoBuySetValueAndQty) {
+
+                    if (pdist < 0 && Math.abs(pdist) >= autoMinPriceDistance) {
+                        command = `Auto2`;
+                    }
+
                 } else if (Number(lastPrice) <= Number(lowPriceGoodToBuy1)) {
                     command = 'GBuy @ ' + lowPriceGoodToBuy1.toFixed(2);
                 }
@@ -639,6 +753,15 @@ async function mainLoop() {
                     }
                 }
 
+                if (lastInitialSellOrderCreatedAt != null) { // check initial sell orders
+                    let dtlcp = new Date(lastInitialSellOrderCreatedAt)
+                    let timePassedOfInitialSellActiveOrder = new Date().getTime() - dtlcp.getTime()
+                    if (timePassedOfInitialSellActiveOrder > (ancientClosePositionOrderMinutes * 1000 * 60)) {
+                        closeOrderByID(lastInitialSellOrderId)
+                        placeInitialSellOrder()
+                    }
+                }
+
             }
 
             if (lastPrice > currentMaxPrice) currentMaxPrice = lastPrice
@@ -649,6 +772,7 @@ async function mainLoop() {
     }
 
     async function printLog() {
+        console.log()
 
         if (headerCounter >= headerInterval || headerCounter == 0 || keyPressed_H || showheader) {
             keyPressed_H = false
@@ -669,10 +793,21 @@ async function mainLoop() {
             process.stdout.write(`${considerClosingPositionPriceDistance}`.brightMagenta.bgBlack)
             process.stdout.write(`;`.grey.bgBlack)
             process.stdout.write(`${qtdContractsToClosePosition}`.brightMagenta.bgBlack)
-            process.stdout.write(' ' + Number(bybitApiCallsPerMinute).toFixed(0).toString().grey.bgBlack + '/m'.grey.bgBlack)
-            process.stdout.write(` wb=${walletBalance} om=${orderMargin} pm=${positionMargin} m%=${PLNonRealized.toFixed(2)}% t%=${PLNonRealizedOFTotal.toFixed(2)}%`.grey.bgBlack)
 
-            console.log()
+
+            process.stdout.write(' ' + maxContractsToAfford.toFixed(0).toString().grey.bgBlack + 'c'.grey.bgBlack)
+            process.stdout.write(' W@'.yellow.bgBlack + Number(Number(entryPrice) - Number(autoMinPriceDistance)).toFixed(2).toString().white.bgBlack)
+            process.stdout.write(' ' + Number(bybitApiCallsPerMinute).toFixed(0).toString().grey.bgBlack + '/m'.grey.bgBlack)
+            process.stdout.write(` wb=${walletBalance} `)
+                //process.stdout.write(`om=${orderMargin} pm=${positionMargin} m%=${PLNonRealized.toFixed(2)}% t%=${PLNonRealizedOFTotal.toFixed(2)}%`.grey.bgBlack)
+
+            process.stdout.write(` ${qtdContractsToBuy}`.yellow.bgBlack)
+            process.stdout.write(`@`.white.bgBlack)
+            process.stdout.write(`${autoMinPriceDistance}`.yellow.bgBlack)
+
+            console.log(` b1:${b1} b2:${b2} b3:${b3} b4:${b4} ${maxOwnContracts}/${maxContractsToAfford.toFixed(0)}`.brightYellow.bgBlack)
+
+            //console.log()
             headerCounter = 0
         }
         headerCounter++;
@@ -779,20 +914,19 @@ async function mainLoop() {
 
         }
 
-        process.stdout.write(` M`.brightYellow.bgBlack)
-        process.stdout.write(`@`.yellow.bgBlack)
-            //process.stdout.write(lastMarkPrice.yellow.bgBlack)
-        utils.printFancyPrice(colors, 'white', 'yellow', 'grey', lastMarkPrice)
+        //process.stdout.write(` M`.brightYellow.bgBlack)
+        //process.stdout.write(`@`.yellow.bgBlack)
+        //utils.printFancyPrice(colors, 'white', 'yellow', 'grey', lastMarkPrice)
 
         process.stdout.write(` `.grey.bgBlack)
         if (Number(pdist) >= Number(pdistMax)) {
-            process.stdout.write(utils.indent(Number(pdist).toFixed(0), Number(pdist).toFixed(0).toString().length + 1, true).white.bgBlue)
+            process.stdout.write(utils.indent(Number(pdist).toFixed(0), 4, true).white.bgBlue)
         } else if (Number(pdist) <= Number(pdistMin)) {
-            process.stdout.write(utils.indent(Number(pdist).toFixed(0), Number(pdist).toFixed(0).toString().length + 1, true).white.bgRed)
+            process.stdout.write(utils.indent(Number(pdist).toFixed(0), 4, true).white.bgRed)
         } else if (Number(pdist) > 0)
-            process.stdout.write(utils.indent(Number(pdist).toFixed(0), Number(pdist).toFixed(0).toString().length + 1, true).brightYellow.bgBlack)
+            process.stdout.write(utils.indent(Number(pdist).toFixed(0), 4, true).brightYellow.bgBlack)
         else
-            process.stdout.write(utils.indent(Number(pdist).toFixed(0), Number(pdist).toFixed(0).toString().length + 1, true).white.bgBlack)
+            process.stdout.write(utils.indent(Number(pdist).toFixed(0), 4, true).white.bgBlack)
 
         //process.stdout.write(' ' + utils.indent((currentMaxPrice - currentMinPrice).toFixed(0), 4, true).black.bgGrey)
         process.stdout.write(' ['.cyan.bgBlack + considerClosingPositionPriceDistance.toString().grey.bgBlack)
@@ -817,11 +951,17 @@ async function mainLoop() {
         process.stdout.write('] '.green.bgBlack)
 
         if (Number(unrealizedPNL) > 0)
-            process.stdout.write(utils.indent(Number(unrealizedPNL).toFixed(8), 9, true).yellow.bgBlack)
+            process.stdout.write(utils.indent(Number(unrealizedPNL).toFixed(8), 10, true).yellow.bgBlack)
         else
-            process.stdout.write(utils.indent(Number(unrealizedPNL).toFixed(8), 9, true).grey.bgBlack)
+            process.stdout.write(utils.indent(Number(unrealizedPNL).toFixed(8), 10, true).grey.bgBlack)
 
         process.stdout.write(' ' + utils.indent(Number(PLNonRealized).toFixed(1), 3, true).grey.bgBlack + '%'.grey.bgBlack)
+
+        process.stdout.write(' '.bgBlack)
+        let v1 = Number(entryPrice) * Number(ownedContracts) + Number(lastPrice) * Number(qtdContractsToBuy)
+        let v2 = Number(ownedContracts) + Number(qtdContractsToBuy)
+
+        process.stdout.write(Number(v1 / v2).toFixed(2).toString())
         process.stdout.write(' '.bgBlack)
 
         if (command.search("Avoiding Liquidation!") == 0) {
@@ -829,6 +969,12 @@ async function mainLoop() {
             avoidLiquidation(lastPrice)
         } else if (ownedContracts == 0 && !isLongActive & !startingLongPosition) {
             await startLongPosition()
+        } else if (command.search("take profit!") == 0 && isLongActive) {
+            lowestPrice = 1000000
+            process.stdout.write(command.brightYellow.bgBlack)
+            await closePosition()
+        } else if (ownedContracts > 0 && isLongActive & !initialSellOrderPlaced) {
+            await placeInitialSellOrder() // coloca uma oferta de venda pra deixar marcado no grafico
         } else if (command.search("GBuy") == 0 || command.search("Auto") == 0) {
             process.stdout.write(command.white.bgBlack)
             process.stdout.write("_ ".grey.bgBlack)
@@ -840,16 +986,17 @@ async function mainLoop() {
                 process.stdout.write(`runningCycles is ${runningCycles} of ${minRunningCyclesToPlaceOrder} `)
             } else {
 
-                if (command.search("Auto") == 0) offerOffsetDown = autoOfferOffsetDown
+                if (enableOnlyLowestPrice && (Number(lastPrice) - Number(offerOffsetDown) >= lowestPrice)) {
+                    process.stdout.write(`lowestPrice is ${lowestPrice}.`)
+                } else {
 
-                if (command.search("Auto") == 0 || command.search("GBuy") == 0) // Protecao para nao executar em outros comandos
-                    await placeActiveOrder(Number(lastPrice) - Number(offerOffsetDown))
+                    if (command.search("Auto") == 0) offerOffsetDown = autoOfferOffsetDown
+
+                    if (command.search("Auto") == 0 || command.search("GBuy") == 0) // Protecao para nao executar em outros comandos
+                        await placeActiveOrder(Number(lastPrice) - Number(offerOffsetDown))
+                }
 
             }
-
-        } else if (command.search("take profit!") == 0 && isLongActive) {
-            process.stdout.write(command.brightYellow.bgBlack)
-            await closePosition()
 
         } else {
             process.stdout.write(command.yellow.bgBlack)
@@ -857,7 +1004,8 @@ async function mainLoop() {
 
         process.stdout.write(" ".grey.bgBlack)
 
-        if (!skipLineFeedThisRound) console.log()
+        //if (!skipLineFeedThisRound) console.log()
+        //console.log()
 
     }
 

@@ -100,6 +100,7 @@ let lastClosePositionOrderDate = new Date()
 let shortExitRunning = false
 let lastCloseShortOrderId = ''
 let startingLongPosition = false
+let unrealizedPNL = 0
 
 const wsConfig = {
     key: API_KEY,
